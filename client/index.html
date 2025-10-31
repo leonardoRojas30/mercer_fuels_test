@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- Preload critical Cape Breton hero image -->
+    <link rel="preload" href="https://headless.cbisland.com/wp-content/uploads/2025/05/DJI_0561-1024x682.avif" as="image" fetchpriority="high">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <title>Mercer Fuels</title>
+    
+    <!-- Base meta tags - location pages will override these with React Helmet -->
+    
+    <!-- Local Business Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["LocalBusiness", "FuelDealer"],
+      "name": "Mercer Fuels",
+      "description": "Family-owned heating oil company serving Sydney and Glace Bay for over 50 years with expert consultation, automatic delivery, and 24/7 emergency service.",
+      "url": "https://mercerfuels.com",
+      "telephone": "+1-902-539-4242",
+      "email": "contact@mercerfuels.com",
+      "foundingDate": "1970",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "64 Brookland Street",
+        "addressLocality": "Sydney",
+        "addressRegion": "Nova Scotia",
+        "postalCode": "B1P 5B2",
+        "addressCountry": "CA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "46.1368",
+        "longitude": "-60.1942"
+      },
+      "serviceArea": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": "46.1368",
+          "longitude": "-60.1942"
+        },
+        "geoRadius": "50000"
+      },
+      "areaServed": [
+        {
+          "@type": "Place",
+          "name": "Sydney, Nova Scotia"
+        },
+        {
+          "@type": "Place", 
+          "name": "Glace Bay, Nova Scotia"
+        },
+        {
+          "@type": "Place",
+          "name": "Cape Breton, Nova Scotia"
+        }
+      ],
+      "openingHours": "Mo-Fr 08:00-17:00",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Heating Oil Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Emergency Heating Oil Delivery",
+              "description": "24/7 emergency heating oil delivery service"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service", 
+              "name": "Automatic Oil Delivery",
+              "description": "Never run out guarantee with automatic monitoring and delivery"
+            }
+          },
+          {
+            "@type": "Service",
+            "name": "Furnace Insurance",
+            "description": "Comprehensive furnace protection and maintenance plans"
+          }
+        ]
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-902-539-4242",
+          "contactType": "customer service",
+          "availableLanguage": "English",
+          "hoursAvailable": "Mo-Fr 08:00-17:00"
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-902-539-4242", 
+          "contactType": "emergency",
+          "availableLanguage": "English",
+          "hoursAvailable": "Mo,Tu,We,Th,Fr,Sa,Su 00:00-23:59"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Emergency Service Available",
+          "value": "true"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Family Owned Business",
+          "value": "true"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Years in Business",
+          "value": "50+"
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
+    <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
+  </body>
+</html>
