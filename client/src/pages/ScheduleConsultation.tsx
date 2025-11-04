@@ -119,19 +119,19 @@ export default function ScheduleConsultation() {
                 </div>
 
                 {/* Trust Stats */}
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                  <div className="grid grid-cols-3 gap-4 text-center">
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 md:p-6 border border-white/20 mt-6">
+                  <div className="grid grid-cols-3 gap-2 sm:gap-4 text-center">
                     <div>
-                      <div className="text-2xl font-bold text-chart-2">Thousands</div>
-                      <div className="text-sm">Of Happy Customers</div>
+                      <div className="text-lg sm:text-xl md:text-2xl font-bold text-chart-2">Thousands</div>
+                      <div className="text-xs sm:text-sm leading-tight">Of Happy Customers</div>
                     </div>
                     <div>
-                      <div className="text-2xl font-bold text-chart-2">50+</div>
-                      <div className="text-sm">Years Experience</div>
+                      <div className="text-lg sm:text-xl md:text-2xl font-bold text-chart-2">50+</div>
+                      <div className="text-xs sm:text-sm leading-tight">Years Experience</div>
                     </div>
                     <div>
-                      <div className="text-2xl font-bold text-chart-2">3rd</div>
-                      <div className="text-sm">Generation Family</div>
+                      <div className="text-lg sm:text-xl md:text-2xl font-bold text-chart-2">3rd</div>
+                      <div className="text-xs sm:text-sm leading-tight">Generation Family</div>
                     </div>
                   </div>
                 </div>
