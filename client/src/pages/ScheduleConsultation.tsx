@@ -119,19 +119,19 @@ export default function ScheduleConsultation() {
                 </div>
 
                 {/* Trust Stats */}
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 md:p-6 border border-white/20 mt-6">
-                  <div className="grid grid-cols-3 gap-3 sm:gap-6 text-center">
-                    <div className="space-y-1 border-r border-white/30 pr-3 sm:pr-6">
-                      <div className="text-xl md:text-2xl font-bold text-chart-2">Thousands</div>
-                      <div className="text-xs md:text-sm whitespace-nowrap">Of Happy<br className="sm:hidden" /> Customers</div>
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-4 md:px-6 md:py-6 border border-white/20 mt-6">
+                  <div className="grid grid-cols-3 divide-x divide-white/30 gap-4 md:gap-6 text-center">
+                    <div className="space-y-1">
+                      <div className="text-xl md:text-2xl font-bold text-chart-2">1000+</div>
+                      <div className="text-xs md:text-sm">Happy Customers</div>
                     </div>
-                    <div className="space-y-1 border-r border-white/30 pr-3 sm:pr-6">
+                    <div className="space-y-1">
                       <div className="text-xl md:text-2xl font-bold text-chart-2">50+</div>
-                      <div className="text-xs md:text-sm whitespace-nowrap">Years<br className="sm:hidden" /> Experience</div>
+                      <div className="text-xs md:text-sm">Years Experience</div>
                     </div>
                     <div className="space-y-1">
                       <div className="text-xl md:text-2xl font-bold text-chart-2">3rd</div>
-                      <div className="text-xs md:text-sm whitespace-nowrap">Generation<br className="sm:hidden" /> Family</div>
+                      <div className="text-xs md:text-sm">Generation Family</div>
                     </div>
                   </div>
                 </div>
