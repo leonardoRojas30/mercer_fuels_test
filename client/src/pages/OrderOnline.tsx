@@ -154,7 +154,7 @@ export default function OrderOnline() {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-chart-2 font-bold">
                   <Truck className="h-5 w-5" />
-                  Why Order from Mercer?
+                  Why Order from Mercer Fuels?
                 </CardTitle>
               </CardHeader>
               <CardContent className="p-6">
