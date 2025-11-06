@@ -68,24 +68,24 @@ export default function PayBill() {
       {/* Hero Section */}
       <section className="relative">
         <div 
-          className="relative min-h-[400px] md:min-h-[400px] lg:min-h-[400px] bg-cover bg-center"
+          className="relative bg-cover bg-center"
           style={{
             backgroundImage: `linear-gradient(rgba(30, 41, 59, 0.8), rgba(30, 41, 59, 0.8)), url(${heroImage})`
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/60 z-0"></div>
           
-          <div className="relative z-10 container mx-auto px-4 lg:px-6 flex items-center pt-[70px] pb-8 md:pt-28 md:pb-12 lg:pt-16 lg:justify-start lg:items-center">
+          <div className="relative z-10 container mx-auto px-6 py-12">
             <div className="w-full text-center text-white">
               <div className="text-lg font-medium text-chart-2 mb-2">We're Local, We're Better</div>
-              <h1 className="text-4xl lg:text-5xl font-bold mb-4">
+              <h1 className="text-4xl md:text-5xl font-bold mb-3">
                 Pay Your <span className="text-chart-2">Bill</span> Securely
               </h1>
-              <p className="text-xl text-white/90 max-w-3xl mx-auto">
+              <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-6">
                 Quick and secure payment for our valued Cape Breton customers. Multiple payment options available for your convenience.
               </p>
               
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-3 md:px-4 md:py-4 border border-white/20 max-w-2xl mx-auto mt-6">
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-3 md:px-4 md:py-4 border border-white/20 max-w-2xl mx-auto">
                 <div className="grid grid-cols-3 text-center">
                   <div className="space-y-0.5 px-3 md:px-4 border-r border-white/30">
                     <div className="text-xl md:text-2xl font-bold text-chart-2 leading-tight">Secure</div>
