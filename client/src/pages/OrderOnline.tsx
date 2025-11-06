@@ -157,7 +157,7 @@ export default function OrderOnline() {
                   Why Order from Mercer Fuels?
                 </CardTitle>
               </CardHeader>
-              <CardContent className="p-6">
+              <CardContent className="pt-2 px-6 pb-6">
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-chart-2 mt-0.5 flex-shrink-0" />
