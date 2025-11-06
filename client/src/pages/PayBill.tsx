@@ -85,18 +85,20 @@ export default function PayBill() {
                 Quick and secure payment for our valued Cape Breton customers. Multiple payment options available for your convenience.
               </p>
               
-              <div className="flex justify-center gap-8 mt-6">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-chart-2">Secure</div>
-                  <div className="text-sm">Encrypted Payments</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-chart-2">Multiple</div>
-                  <div className="text-sm">Payment Methods</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-chart-2">24/7</div>
-                  <div className="text-sm">Online Access</div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-3 md:px-4 md:py-4 border border-white/20 max-w-2xl mx-auto mt-6">
+                <div className="grid grid-cols-3 text-center">
+                  <div className="space-y-0.5 px-3 md:px-4 border-r border-white/30">
+                    <div className="text-xl md:text-2xl font-bold text-chart-2 leading-tight">Secure</div>
+                    <div className="text-xs md:text-sm leading-snug">Encrypted Payments</div>
+                  </div>
+                  <div className="space-y-0.5 px-3 md:px-4 border-r border-white/30">
+                    <div className="text-xl md:text-2xl font-bold text-chart-2 leading-tight">Multiple</div>
+                    <div className="text-xs md:text-sm leading-snug">Payment Methods</div>
+                  </div>
+                  <div className="space-y-0.5 px-3 md:px-4">
+                    <div className="text-xl md:text-2xl font-bold text-chart-2 leading-tight">24/7</div>
+                    <div className="text-xs md:text-sm leading-snug">Online Access</div>
+                  </div>
                 </div>
               </div>
             </div>
