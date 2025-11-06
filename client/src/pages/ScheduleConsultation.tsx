@@ -119,19 +119,19 @@ export default function ScheduleConsultation() {
                 </div>
 
                 {/* Trust Stats */}
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-4 md:px-4 md:py-6 border border-white/20 mt-6">
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-3 md:px-4 md:py-4 border border-white/20 mt-6">
                   <div className="grid grid-cols-3 text-center">
-                    <div className="space-y-1 px-3 md:px-4 border-r border-white/30">
-                      <div className="text-xl md:text-2xl font-bold text-chart-2">1000+</div>
-                      <div className="text-xs md:text-sm">Happy Customers</div>
+                    <div className="space-y-0.5 px-3 md:px-4 border-r border-white/30">
+                      <div className="text-xl md:text-2xl font-bold text-chart-2 leading-tight">1000+</div>
+                      <div className="text-xs md:text-sm leading-snug">Happy Customers</div>
                     </div>
-                    <div className="space-y-1 px-3 md:px-4 border-r border-white/30">
-                      <div className="text-xl md:text-2xl font-bold text-chart-2">50+</div>
-                      <div className="text-xs md:text-sm">Years Experience</div>
+                    <div className="space-y-0.5 px-3 md:px-4 border-r border-white/30">
+                      <div className="text-xl md:text-2xl font-bold text-chart-2 leading-tight">50+</div>
+                      <div className="text-xs md:text-sm leading-snug">Years Experience</div>
                     </div>
-                    <div className="space-y-1 px-3 md:px-4">
-                      <div className="text-xl md:text-2xl font-bold text-chart-2">3rd</div>
-                      <div className="text-xs md:text-sm">Generation Family</div>
+                    <div className="space-y-0.5 px-3 md:px-4">
+                      <div className="text-xl md:text-2xl font-bold text-chart-2 leading-tight">3rd</div>
+                      <div className="text-xs md:text-sm leading-snug">Generation Family</div>
                     </div>
                   </div>
                 </div>
