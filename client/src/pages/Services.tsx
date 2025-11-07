@@ -176,20 +176,22 @@ export default function Services() {
               </Link>
 
               {/* Easy Online Bill Payment */}
-              <Card className="p-6 hover-elevate h-full" data-testid="card-online-bill-payment">
-                <div className="flex flex-col h-full">
-                  <div className="p-3 rounded-lg bg-chart-2/10 w-fit mb-4">
-                    <Settings className="w-8 h-8 text-chart-2" />
+              <Link href="/billpayment">
+                <Card className="p-6 hover-elevate h-full" data-testid="card-online-bill-payment">
+                  <div className="flex flex-col h-full">
+                    <div className="p-3 rounded-lg bg-chart-2/10 w-fit mb-4">
+                      <Settings className="w-8 h-8 text-chart-2" />
+                    </div>
+                    <h3 className="text-xl font-bold mb-3">Easy Online Bill Payment</h3>
+                    <p className="text-muted-foreground flex-grow">
+                      Pay your bills quickly and securely online at your convenience.
+                    </p>
                   </div>
-                  <h3 className="text-xl font-bold mb-3">Easy Online Bill Payment</h3>
-                  <p className="text-muted-foreground flex-grow">
-                    Pay your bills quickly and securely online at your convenience.
-                  </p>
-                </div>
-              </Card>
+                </Card>
+              </Link>
 
               {/* Email Statements */}
-              <Card className="p-6 hover-elevate h-full" data-testid="card-email-statements">
+              <Card className="p-6 h-full opacity-75" data-testid="card-email-statements">
                 <div className="flex flex-col h-full">
                   <div className="p-3 rounded-lg bg-chart-2/10 w-fit mb-4">
                     <Mail className="w-8 h-8 text-chart-2" />
@@ -198,6 +200,7 @@ export default function Services() {
                   <p className="text-muted-foreground flex-grow">
                     Receive your statements directly to your inbox for easy record keeping.
                   </p>
+                  <Badge variant="secondary" className="w-fit mt-2">Feature Available</Badge>
                 </div>
               </Card>
             </div>
@@ -286,7 +289,7 @@ export default function Services() {
               </a>
 
               {/* Text Message Reminders */}
-              <Card className="p-6 hover-elevate h-full" data-testid="card-text-reminders">
+              <Card className="p-6 h-full opacity-75" data-testid="card-text-reminders">
                 <div className="flex flex-col h-full">
                   <div className="p-3 rounded-lg bg-chart-2/10 w-fit mb-4">
                     <MessageCircle className="w-8 h-8 text-chart-2" />
@@ -295,6 +298,7 @@ export default function Services() {
                   <p className="text-muted-foreground flex-grow">
                     Stay informed with convenient text message updates about deliveries and service appointments.
                   </p>
+                  <Badge variant="secondary" className="w-fit mt-2">Feature Available</Badge>
                 </div>
               </Card>
             </div>
@@ -311,17 +315,19 @@ export default function Services() {
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* Refer A Friend Program */}
-              <Card className="p-6 hover-elevate h-full" data-testid="card-refer-friend">
-                <div className="flex flex-col h-full">
-                  <div className="p-3 rounded-lg bg-chart-2/10 w-fit mb-4">
-                    <Users className="w-8 h-8 text-chart-2" />
+              <Link href="/refer-a-friend">
+                <Card className="p-6 hover-elevate h-full" data-testid="card-refer-friend">
+                  <div className="flex flex-col h-full">
+                    <div className="p-3 rounded-lg bg-chart-2/10 w-fit mb-4">
+                      <Users className="w-8 h-8 text-chart-2" />
+                    </div>
+                    <h3 className="text-xl font-bold mb-3">Refer A Friend Program</h3>
+                    <p className="text-muted-foreground flex-grow">
+                      Earn rewards by referring your friends and neighbors to Mercer Fuels.
+                    </p>
                   </div>
-                  <h3 className="text-xl font-bold mb-3">Refer A Friend Program</h3>
-                  <p className="text-muted-foreground flex-grow">
-                    Earn rewards by referring your friends and neighbors to Mercer Fuels.
-                  </p>
-                </div>
-              </Card>
+                </Card>
+              </Link>
 
               {/* Social Media Giveaways */}
               <Card className="p-6 hover-elevate h-full" data-testid="card-social-giveaways">
