@@ -146,9 +146,9 @@ export default function PayBill() {
             <div className="space-y-6">
               {/* Payment Options */}
               <Card className="hover-elevate transition-all duration-300 bg-white/95 backdrop-blur-sm border-0 shadow-xl">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-chart-2 font-bold">
-                    <CreditCard className="h-5 w-5" />
+                <CardHeader className="bg-gradient-to-r from-chart-2/10 to-transparent">
+                  <CardTitle className="flex items-center gap-2 font-bold text-black dark:text-white">
+                    <CreditCard className="h-5 w-5 text-chart-2" />
                     Payment Benefits
                   </CardTitle>
                 </CardHeader>
@@ -181,9 +181,9 @@ export default function PayBill() {
 
               {/* Payment Locations */}
               <Card className="hover-elevate transition-all duration-300 bg-white/95 backdrop-blur-sm border-0 shadow-xl">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-chart-2">
-                    <MapPin className="h-5 w-5" />
+                <CardHeader className="bg-gradient-to-r from-chart-2/10 to-transparent">
+                  <CardTitle className="flex items-center gap-2 font-bold text-black dark:text-white">
+                    <MapPin className="h-5 w-5 text-chart-2" />
                     Local Payment Options
                   </CardTitle>
                 </CardHeader>
