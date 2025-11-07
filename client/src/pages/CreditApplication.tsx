@@ -139,7 +139,7 @@ export default function CreditApplication() {
                 Flexible <span className="text-chart-2">Payment</span> Plans
               </h1>
               <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-6">
-                Apply for credit terms to spread your heating costs with convenient monthly payments. Quick approval from your trusted Cape Breton neighbors.
+                Flexible payment terms to spread your heating costs with quick approval from your trusted Cape Breton neighbors.
               </p>
               
               <div className="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-3 md:px-4 md:py-4 border border-white/20 max-w-2xl mx-auto">
