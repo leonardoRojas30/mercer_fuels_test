@@ -117,23 +117,21 @@ export default function PayBill() {
                   <CardTitle className="text-2xl font-bold mb-2">Make Your Payment</CardTitle>
                 </CardHeader>
                 <CardContent className="p-3 md:p-6">
-                  <div className="w-full overflow-y-auto" style={{ maxHeight: '85vh' }}>
-                    <iframe
-                      id="JotFormIFrame-201264019758254"
-                      title="Mercer Fuels Bill Payment"
-                      onLoad={() => window.parent.scrollTo(0,0)}
-                      allow="geolocation; microphone; camera; fullscreen; payment"
-                      src="https://pci.jotform.com/form/201264019758254"
-                      style={{
-                        minWidth: '100%',
-                        maxWidth: '100%',
-                        height: 'clamp(420px, 85vh, 620px)',
-                        border: 'none'
-                      }}
-                      scrolling="yes"
-                      data-testid="iframe-jotform-payment"
-                    />
-                  </div>
+                  <iframe
+                    id="JotFormIFrame-201264019758254"
+                    title="Mercer Fuels Bill Payment"
+                    onLoad={() => window.parent.scrollTo(0,0)}
+                    allow="geolocation; microphone; camera; fullscreen; payment"
+                    src="https://pci.jotform.com/form/201264019758254"
+                    style={{
+                      minWidth: '100%',
+                      maxWidth: '100%',
+                      height: '1200px',
+                      border: 'none'
+                    }}
+                    scrolling="no"
+                    data-testid="iframe-jotform-payment"
+                  />
                   <div className="text-center text-sm text-gray-600 mt-4">
                     <div className="flex items-center justify-center gap-2">
                       <Shield className="h-4 w-4" />
