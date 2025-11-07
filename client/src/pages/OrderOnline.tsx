@@ -151,9 +151,9 @@ export default function OrderOnline() {
           <div className="space-y-6">
             {/* Service Features */}
             <Card className="hover-elevate transition-all duration-300 bg-white/95 backdrop-blur-sm border-0 shadow-xl" data-testid="sidebar-card-features">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-chart-2 font-bold">
-                  <Truck className="h-5 w-5" />
+              <CardHeader className="bg-gradient-to-r from-chart-2/10 to-transparent">
+                <CardTitle className="flex items-center gap-2 font-bold text-black dark:text-white">
+                  <Truck className="h-5 w-5 text-chart-2" />
                   Why Order from Mercer Fuels?
                 </CardTitle>
               </CardHeader>
