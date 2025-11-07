@@ -470,9 +470,9 @@ export default function CreditApplication() {
             <div className="space-y-6">
               {/* Benefits */}
               <Card className="hover-elevate transition-all duration-300 bg-white/95 backdrop-blur-sm border-0 shadow-xl">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-chart-2 font-bold">
-                    <Award className="h-5 w-5" />
+                <CardHeader className="bg-gradient-to-r from-chart-2/10 to-transparent">
+                  <CardTitle className="flex items-center gap-2 font-bold">
+                    <Award className="h-5 w-5 text-chart-2" />
                     Credit Benefits
                   </CardTitle>
                 </CardHeader>
@@ -505,9 +505,9 @@ export default function CreditApplication() {
 
               {/* Security */}
               <Card className="hover-elevate transition-all duration-300 bg-white/95 backdrop-blur-sm border-0 shadow-xl">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-chart-2 font-bold">
-                    <Shield className="h-5 w-5" />
+                <CardHeader className="bg-gradient-to-r from-chart-2/10 to-transparent">
+                  <CardTitle className="flex items-center gap-2 font-bold">
+                    <Shield className="h-5 w-5 text-chart-2" />
                     Security & Privacy
                   </CardTitle>
                 </CardHeader>
