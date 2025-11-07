@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { useLocation } from "wouter";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PageSection from "@/components/shared/PageSection";
 import SEOHead from "@/components/SEOHead";
 
 const heroImage = "https://headless.cbisland.com/wp-content/uploads/2025/05/DJI_0561-1024x682.avif";
@@ -107,14 +108,13 @@ export default function PayBill() {
       </section>
 
       {/* Payment Form */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 lg:px-6">
-          <div className="grid lg:grid-cols-3 gap-8">
+      <PageSection background="muted">
+        <div className="grid lg:grid-cols-3 gap-8">
             {/* JotForm Payment Form */}
             <div className="lg:col-span-2">
-              <Card className="shadow-lg">
-                <CardHeader className="bg-gradient-to-r from-chart-2/5 to-transparent">
-                  <CardTitle className="text-2xl text-chart-2 mb-2">Make Your Payment</CardTitle>
+              <Card className="hover-elevate transition-all duration-300 bg-white/95 backdrop-blur-sm border-0 shadow-xl">
+                <CardHeader className="bg-gradient-to-r from-chart-2/10 to-transparent">
+                  <CardTitle className="text-2xl font-bold mb-2">Make Your Payment</CardTitle>
                 </CardHeader>
                 <CardContent className="p-6">
                   <iframe
@@ -145,14 +145,14 @@ export default function PayBill() {
             {/* Sidebar */}
             <div className="space-y-6">
               {/* Payment Options */}
-              <Card className="shadow-lg">
-                <CardHeader className="bg-gradient-to-r from-chart-2/10 to-transparent">
-                  <CardTitle className="flex items-center gap-2 text-chart-2">
+              <Card className="hover-elevate transition-all duration-300 bg-white/95 backdrop-blur-sm border-0 shadow-xl">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2 text-chart-2 font-bold">
                     <CreditCard className="h-5 w-5" />
                     Payment Benefits
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="p-6">
+                <CardContent className="pt-2 px-6 pb-6">
                   <div className="space-y-4">
                     <div className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-chart-2 mt-0.5 flex-shrink-0" />
@@ -180,14 +180,14 @@ export default function PayBill() {
               </Card>
 
               {/* Payment Locations */}
-              <Card className="shadow-lg">
+              <Card className="hover-elevate transition-all duration-300 bg-white/95 backdrop-blur-sm border-0 shadow-xl">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2 text-chart-2">
                     <MapPin className="h-5 w-5" />
                     Local Payment Options
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="p-6">
+                <CardContent className="pt-2 px-6 pb-6">
                   <div className="space-y-4">
                     <div>
                       <p className="font-semibold text-chart-2 mb-1">Sydney Office</p>
@@ -210,7 +210,7 @@ export default function PayBill() {
               </Card>
 
               {/* Contact for Help */}
-              <Card className="shadow-lg border-chart-2/20">
+              <Card className="hover-elevate transition-all duration-300 bg-white/95 backdrop-blur-sm border-0 shadow-xl">
                 <CardContent className="p-6">
                   <div className="text-center">
                     <h3 className="font-bold text-chart-2 mb-2">Need Help?</h3>
@@ -230,8 +230,7 @@ export default function PayBill() {
               </Card>
             </div>
           </div>
-        </div>
-      </section>
+      </PageSection>
 
       <Footer />
     </div>
