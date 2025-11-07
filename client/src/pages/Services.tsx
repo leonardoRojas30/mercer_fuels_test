@@ -79,7 +79,7 @@ export default function Services() {
             </div>
             <div>
               <div className="text-3xl md:text-4xl font-bold text-foreground">1000+</div>
-              <div className="text-sm md:text-base text-muted-foreground">Of Happy Customers</div>
+              <div className="text-sm md:text-base text-muted-foreground">Happy Customers</div>
             </div>
             <div>
               <div className="text-3xl md:text-4xl font-bold text-foreground">200+</div>
