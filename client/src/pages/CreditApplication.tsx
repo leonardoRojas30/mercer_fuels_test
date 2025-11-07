@@ -14,6 +14,7 @@ import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PageSection from "@/components/shared/PageSection";
 import { Helmet } from "react-helmet-async";
 
 const heroImage = "https://headless.cbisland.com/wp-content/uploads/2025/05/DJI_0561-1024x682.avif";
@@ -124,35 +125,37 @@ export default function CreditApplication() {
       {/* Hero Section */}
       <section className="relative">
         <div 
-          className="relative min-h-[400px] md:min-h-[400px] lg:min-h-[400px] bg-cover bg-center"
+          className="relative bg-cover bg-center"
           style={{
             backgroundImage: `linear-gradient(rgba(30, 41, 59, 0.8), rgba(30, 41, 59, 0.8)), url(${heroImage})`
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/60 z-0"></div>
           
-          <div className="relative z-10 container mx-auto px-4 lg:px-6 flex items-center pt-[70px] pb-8 md:pt-28 md:pb-12 lg:pt-16 lg:justify-start lg:items-center">
+          <div className="relative z-10 container mx-auto px-6 py-12">
             <div className="w-full text-center text-white">
               <div className="text-lg font-medium text-chart-2 mb-2">We're Local, We're Better</div>
-              <h1 className="text-4xl lg:text-5xl font-bold mb-4">
+              <h1 className="text-4xl md:text-5xl font-bold mb-3">
                 Flexible <span className="text-chart-2">Payment</span> Plans
               </h1>
-              <p className="text-xl text-white/90 max-w-3xl mx-auto">
+              <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-6">
                 Apply for credit terms to spread your heating costs with convenient monthly payments. Quick approval from your trusted Cape Breton neighbors.
               </p>
               
-              <div className="flex justify-center gap-8 mt-6">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-chart-2">Quick</div>
-                  <div className="text-sm">24-Hour Approval</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-chart-2">Flexible</div>
-                  <div className="text-sm">Payment Terms</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-chart-2">Local</div>
-                  <div className="text-sm">Family Service</div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-3 md:px-4 md:py-4 border border-white/20 max-w-2xl mx-auto">
+                <div className="grid grid-cols-3 text-center">
+                  <div className="space-y-0.5 px-3 md:px-4 border-r border-white/30">
+                    <div className="text-xl md:text-2xl font-bold text-chart-2 leading-tight">Quick</div>
+                    <div className="text-xs md:text-sm leading-snug">24-Hour Approval</div>
+                  </div>
+                  <div className="space-y-0.5 px-3 md:px-4 border-r border-white/30">
+                    <div className="text-xl md:text-2xl font-bold text-chart-2 leading-tight">Flexible</div>
+                    <div className="text-xs md:text-sm leading-snug">Payment Terms</div>
+                  </div>
+                  <div className="space-y-0.5 px-3 md:px-4">
+                    <div className="text-xl md:text-2xl font-bold text-chart-2 leading-tight">Local</div>
+                    <div className="text-xs md:text-sm leading-snug">Family Service</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -161,19 +164,18 @@ export default function CreditApplication() {
       </section>
 
       {/* Application Form */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 lg:px-6">
-          <div className="grid lg:grid-cols-3 gap-8">
-            {/* Application Form */}
-            <div className="lg:col-span-2">
-              <Card className="shadow-lg">
-                <CardHeader className="bg-gradient-to-r from-chart-2/5 to-transparent">
-                  <CardTitle className="text-2xl text-chart-2 mb-2">Credit Application</CardTitle>
-                  <CardDescription className="text-lg">
-                    Apply for flexible payment terms with secure, confidential processing.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="p-8">
+      <PageSection background="muted">
+        <div className="grid lg:grid-cols-3 gap-8">
+          {/* Application Form */}
+          <div className="lg:col-span-2">
+            <Card className="hover-elevate transition-all duration-300 bg-white/95 backdrop-blur-sm border-0 shadow-xl">
+              <CardHeader className="bg-gradient-to-r from-chart-2/10 to-transparent">
+                <CardTitle className="text-2xl font-bold mb-2">Credit Application</CardTitle>
+                <CardDescription className="text-lg">
+                  Apply for flexible payment terms with secure, confidential processing.
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="p-6">
                   <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
                       {/* Personal Information */}
@@ -552,8 +554,7 @@ export default function CreditApplication() {
               </Card>
             </div>
           </div>
-        </div>
-      </section>
+      </PageSection>
 
       <Footer />
     </div>
