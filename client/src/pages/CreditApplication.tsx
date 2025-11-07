@@ -469,14 +469,14 @@ export default function CreditApplication() {
             {/* Sidebar */}
             <div className="space-y-6">
               {/* Benefits */}
-              <Card className="shadow-lg">
+              <Card className="hover-elevate transition-all duration-300 bg-white/95 backdrop-blur-sm border-0 shadow-xl">
                 <CardHeader className="bg-gradient-to-r from-chart-2/10 to-transparent">
-                  <CardTitle className="flex items-center gap-2 text-chart-2">
+                  <CardTitle className="flex items-center gap-2 text-chart-2 font-bold">
                     <Award className="h-5 w-5" />
                     Credit Benefits
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="p-6">
+                <CardContent className="pt-2 px-6 pb-6">
                   <div className="space-y-4">
                     <div className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-chart-2 mt-0.5 flex-shrink-0" />
@@ -504,14 +504,14 @@ export default function CreditApplication() {
               </Card>
 
               {/* Security */}
-              <Card className="shadow-lg">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-chart-2">
+              <Card className="hover-elevate transition-all duration-300 bg-white/95 backdrop-blur-sm border-0 shadow-xl">
+                <CardHeader className="bg-gradient-to-r from-chart-2/10 to-transparent">
+                  <CardTitle className="flex items-center gap-2 text-chart-2 font-bold">
                     <Shield className="h-5 w-5" />
                     Security & Privacy
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="p-6">
+                <CardContent className="pt-2 px-6 pb-6">
                   <div className="space-y-3">
                     <div className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-chart-2" />
@@ -534,7 +534,7 @@ export default function CreditApplication() {
               </Card>
 
               {/* Contact */}
-              <Card className="shadow-lg border-chart-2/20">
+              <Card className="hover-elevate transition-all duration-300 bg-white/95 backdrop-blur-sm border-0 shadow-xl">
                 <CardContent className="p-6">
                   <div className="text-center">
                     <h3 className="font-bold text-chart-2 mb-2">Questions?</h3>
