@@ -97,14 +97,14 @@ export default function FurnaceInsurance() {
       {/* Hero Section */}
       <section className="relative">
         <div 
-          className="relative min-h-[700px] bg-cover bg-center"
+          className="relative min-h-[600px] md:min-h-[600px] lg:min-h-[600px] bg-cover bg-center"
           style={{
             backgroundImage: `linear-gradient(rgba(30, 41, 59, 0.75), rgba(30, 41, 59, 0.75)), url(${heroImage})`
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/60"></div>
           
-          <div className="relative z-10 container mx-auto px-4 lg:px-6 py-12 lg:py-20">
+          <div className="relative z-10 container mx-auto px-4 lg:px-6 pt-[70px] pb-8 md:pt-28 md:pb-12 lg:pt-16">
             <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start w-full">
               {/* Left Column - Content */}
               <div className="text-white space-y-6">
