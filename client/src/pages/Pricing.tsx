@@ -42,15 +42,15 @@ export default function Pricing() {
       {/* Hero Section */}
       <section className="relative">
         <div 
-          className="relative min-h-[550px] md:min-h-[500px] bg-cover bg-center"
+          className="relative min-h-[400px] md:min-h-[500px] bg-cover bg-center"
           style={{
             backgroundImage: `linear-gradient(rgba(30, 41, 59, 0.75), rgba(30, 41, 59, 0.75)), url(${heroImage})`
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/60 z-0"></div>
           
-          <div className="relative z-10 container mx-auto px-4 lg:px-6 flex items-center justify-center min-h-[550px] md:min-h-[500px] py-20">
-            <div className="text-center text-white space-y-6 max-w-4xl">
+          <div className="relative z-10 container mx-auto px-4 lg:px-6 flex items-center justify-center min-h-[400px] md:min-h-[500px] py-12 md:py-20">
+            <div className="text-center text-white space-y-4 md:space-y-6 max-w-4xl">
               <Badge className="bg-chart-2/20 text-chart-2 border-chart-2/30 text-sm md:text-base px-3 md:px-4 py-1.5 mb-2">
                 Supporting Local Doesn't Mean Spending More
               </Badge>
@@ -64,7 +64,7 @@ export default function Pricing() {
               </p>
               
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+              <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center pt-4">
                 <Button 
                   asChild
                   size="lg"
