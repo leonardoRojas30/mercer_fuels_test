@@ -166,7 +166,7 @@ export default function FurnaceInsurance() {
               </div>
 
               {/* Right Column - Form */}
-              <div className="lg:max-w-md" id="interest-form">
+              <div id="interest-form">
                 <Card className="bg-white shadow-2xl">
                   <CardHeader>
                     <CardTitle className="text-2xl">Interested in Furnace Insurance?</CardTitle>
