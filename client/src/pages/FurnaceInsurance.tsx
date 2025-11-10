@@ -105,19 +105,19 @@ export default function FurnaceInsurance() {
           <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/60"></div>
           
           <div className="relative z-10 container mx-auto px-4 lg:px-6 pt-[70px] pb-8 md:pt-28 md:pb-12 lg:pt-16">
-            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start w-full">
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full">
               {/* Left Column - Content */}
-              <div className="text-white space-y-6">
+              <div className="text-white space-y-4">
                 <Badge className="bg-chart-2/20 text-chart-2 border-chart-2/30 text-base px-6 py-2 mb-2" data-testid="badge-cheapest-insurance">
                   <Shield className="w-4 h-4 mr-2 inline" />
                   The Most Affordable in Cape Breton
                 </Badge>
                 
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight" data-testid="heading-main">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight" data-testid="heading-main">
                   Cape Breton's <span className="text-chart-2">Cheapest Furnace Insurance</span>
                 </h1>
                 
-                <p className="text-xl md:text-2xl text-white/90 leading-relaxed" data-testid="text-hero-description">
+                <p className="text-lg md:text-xl text-white/90 leading-relaxed" data-testid="text-hero-description">
                   Free annual cleaning plus coverage on major furnace components. Only $225 + tax per year.
                 </p>
                 
@@ -147,19 +147,19 @@ export default function FurnaceInsurance() {
                 </div>
 
                 {/* Trust Stats */}
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-3 md:px-4 md:py-4 border border-white/20 mt-6">
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2 md:px-4 md:py-3 border border-white/20 mt-4">
                   <div className="grid grid-cols-3 text-center">
-                    <div className="space-y-0.5 px-3 md:px-4 border-r border-white/30">
-                      <div className="text-xl md:text-2xl font-bold text-chart-2 leading-tight">50+</div>
-                      <div className="text-xs md:text-sm leading-snug">Years Experience</div>
+                    <div className="space-y-0.5 px-2 md:px-3 border-r border-white/30">
+                      <div className="text-lg md:text-xl font-bold text-chart-2 leading-tight">50+</div>
+                      <div className="text-xs leading-snug">Years Experience</div>
                     </div>
-                    <div className="space-y-0.5 px-3 md:px-4 border-r border-white/30">
-                      <div className="text-xl md:text-2xl font-bold text-chart-2 leading-tight">1000+</div>
-                      <div className="text-xs md:text-sm leading-snug">Families Protected</div>
+                    <div className="space-y-0.5 px-2 md:px-3 border-r border-white/30">
+                      <div className="text-lg md:text-xl font-bold text-chart-2 leading-tight">1000+</div>
+                      <div className="text-xs leading-snug">Families Protected</div>
                     </div>
-                    <div className="space-y-0.5 px-3 md:px-4">
-                      <div className="text-xl md:text-2xl font-bold text-chart-2 leading-tight">200+</div>
-                      <div className="text-xs md:text-sm leading-snug">5-Star Reviews</div>
+                    <div className="space-y-0.5 px-2 md:px-3">
+                      <div className="text-lg md:text-xl font-bold text-chart-2 leading-tight">200+</div>
+                      <div className="text-xs leading-snug">5-Star Reviews</div>
                     </div>
                   </div>
                 </div>
