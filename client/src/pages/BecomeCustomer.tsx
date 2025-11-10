@@ -108,13 +108,13 @@ export default function BecomeCustomer() {
           <div className="relative z-10 container mx-auto px-4 lg:px-6 flex items-center pt-[70px] pb-8 md:pt-28 md:pb-12 lg:pt-16 lg:justify-start lg:items-center">
             <div className="grid lg:grid-cols-2 gap-8 items-center w-full">
               {/* Hero Content */}
-              <div className="text-white space-y-6">
+              <div className="text-white space-y-4">
                 <div className="space-y-2">
                   <div className="text-lg font-medium text-chart-2">We're Local, We're Better</div>
-                  <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
+                  <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
                     Join Cape Breton's <span className="text-chart-2">Trusted</span> Oil Family
                   </h1>
-                  <p className="text-xl text-white/90">
+                  <p className="text-lg md:text-xl text-white/90">
                     Three generations serving your neighbors. We'll take care of your family with competitive pricing, automatic delivery, and the guarantee you'll never run out.
                   </p>
                 </div>
@@ -139,19 +139,19 @@ export default function BecomeCustomer() {
                 </div>
 
                 {/* Trust Stats */}
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-3 md:px-4 md:py-4 border border-white/20 mt-6">
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2 md:px-4 md:py-3 border border-white/20 mt-4">
                   <div className="grid grid-cols-3 text-center">
-                    <div className="space-y-0.5 px-3 md:px-4 border-r border-white/30">
-                      <div className="text-xl md:text-2xl font-bold text-chart-2 leading-tight">1000+</div>
-                      <div className="text-xs md:text-sm leading-snug">Happy Customers</div>
+                    <div className="space-y-0.5 px-2 md:px-3 border-r border-white/30">
+                      <div className="text-lg md:text-xl font-bold text-chart-2 leading-tight">1000+</div>
+                      <div className="text-xs leading-snug">Happy Customers</div>
                     </div>
-                    <div className="space-y-0.5 px-3 md:px-4 border-r border-white/30">
-                      <div className="text-xl md:text-2xl font-bold text-chart-2 leading-tight">50+</div>
-                      <div className="text-xs md:text-sm leading-snug">Years Experience</div>
+                    <div className="space-y-0.5 px-2 md:px-3 border-r border-white/30">
+                      <div className="text-lg md:text-xl font-bold text-chart-2 leading-tight">50+</div>
+                      <div className="text-xs leading-snug">Years Experience</div>
                     </div>
-                    <div className="space-y-0.5 px-3 md:px-4">
-                      <div className="text-xl md:text-2xl font-bold text-chart-2 leading-tight">3rd</div>
-                      <div className="text-xs md:text-sm leading-snug">Generation Family</div>
+                    <div className="space-y-0.5 px-2 md:px-3">
+                      <div className="text-lg md:text-xl font-bold text-chart-2 leading-tight">3rd</div>
+                      <div className="text-xs leading-snug">Generation Family</div>
                     </div>
                   </div>
                 </div>
