@@ -45,7 +45,7 @@ export function generateSitemap(): string {
       priority: 0.7
     },
     {
-      loc: `${baseUrl}/fuelapplication`,
+      loc: `${baseUrl}/creditapplication`,
       lastmod: currentDate,
       changefreq: 'monthly',
       priority: 0.7

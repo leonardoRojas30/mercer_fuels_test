@@ -361,7 +361,7 @@ export default function Footer() {
                   className="w-full justify-start font-semibold border-2 border-primary-foreground/60 bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground hover:text-primary transition-all shadow-sm"
                   data-testid="button-credit-application"
                 >
-                  <Link href="/fuelapplication">Credit Application</Link>
+                  <Link href="/creditapplication">Credit Application</Link>
                 </Button>
                 <Button 
                   asChild

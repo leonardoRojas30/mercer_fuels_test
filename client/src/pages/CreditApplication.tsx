@@ -99,14 +99,14 @@ export default function CreditApplication() {
         <title>Credit Application | Mercer Fuels Cape Breton</title>
         <meta name="description" content="Apply for credit terms with convenient monthly payments. Quick 24-hour approval. Flexible payment options from your trusted Cape Breton heating company." />
         <meta name="keywords" content="heating oil credit application, payment plans Cape Breton, heating oil financing, flexible payments Sydney NS, oil delivery credit terms, heating budget plans" />
-        <link rel="canonical" href="https://mercerfuels.com/fuelapplication" />
+        <link rel="canonical" href="https://mercerfuels.com/creditapplication" />
         
         {/* Open Graph Tags */}
         <meta property="og:site_name" content="Mercer Fuels" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Flexible Credit Application - Heating Oil Payment Plans" />
         <meta property="og:description" content="Apply for credit terms with convenient monthly payments. Quick 24-hour approval from your local Cape Breton heating company." />
-        <meta property="og:url" content="https://mercerfuels.com/fuelapplication" />
+        <meta property="og:url" content="https://mercerfuels.com/creditapplication" />
         <meta property="og:image" content="https://mercerfuels.com/attached_assets/MercerFuelsLogo-04_1757980751501.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />

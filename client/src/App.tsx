@@ -1,9 +1,9 @@
-import { Switch, Route } from "wouter";
+import { Switch, Route, useLocation } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { Suspense, lazy } from "react";
+import { Suspense, lazy, useEffect } from "react";
 import { HelmetProvider } from "react-helmet-async";
 import PerformanceOptimizer from "@/components/PerformanceOptimizer";
 import MobileBottomBar from "@/components/MobileBottomBar";
@@ -68,6 +68,17 @@ function PageLoader() {
   );
 }
 
+// Redirect component for URL changes
+function Redirect({ to }: { to: string }) {
+  const [, setLocation] = useLocation();
+  
+  useEffect(() => {
+    setLocation(to);
+  }, [to, setLocation]);
+  
+  return null;
+}
+
 function Router() {
   return (
     <Suspense fallback={<PageLoader />}>
@@ -77,7 +88,8 @@ function Router() {
         <Route path="/orderonline" component={OrderOnline} />
         <Route path="/billpayment" component={PayBill} />
         <Route path="/become-a-customer" component={BecomeCustomer} />
-        <Route path="/fuelapplication" component={CreditApplication} />
+        <Route path="/creditapplication" component={CreditApplication} />
+        <Route path="/fuelapplication">{() => <Redirect to="/creditapplication" />}</Route>
         <Route path="/insurance" component={FurnaceInsurance} />
         <Route path="/sydney-heating-oil" component={SydneyHeatingOil} />
         <Route path="/glace-bay-heating-oil" component={GlaceBayHeatingOil} />

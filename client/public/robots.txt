@@ -13,7 +13,7 @@ Allow: /schedule-consultation
 Allow: /become-a-customer
 Allow: /orderonline
 Allow: /billpayment
-Allow: /fuelapplication
+Allow: /creditapplication
 Allow: /insurance
 
 # Crawl delay (in seconds) - optional, helps with server load
