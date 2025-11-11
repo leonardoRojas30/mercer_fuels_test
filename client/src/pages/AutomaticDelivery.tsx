@@ -298,7 +298,7 @@ export default function AutomaticDelivery() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8 items-start">
+          <div className="grid lg:grid-cols-2 gap-8 items-start max-w-6xl mx-auto">
             {/* Steps */}
             <div className="grid md:grid-cols-2 gap-8">
             <div className="text-center" data-testid="step-setup">
