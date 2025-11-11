@@ -121,21 +121,68 @@ export default function AutomaticDelivery() {
           <div className="relative z-10 container mx-auto px-4 lg:px-6 flex items-start justify-center pt-[70px] pb-8 md:pt-28 md:pb-12 lg:pt-28 lg:justify-start lg:items-center">
             <div className="grid lg:grid-cols-2 gap-8 items-center w-full">
               {/* Hero Content */}
-              <div className="text-white space-y-4 md:space-y-6">
-                <div className="space-y-2">
-                  <Badge className="bg-chart-2/20 text-chart-2 border-chart-2/30 mb-4" data-testid="badge-peace-of-mind">
-                    <Battery className="w-4 h-4 mr-2" />
-                    Peace of Mind Service
-                  </Badge>
-                  <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight" data-testid="heading-main">
-                    <span className="text-chart-2">Never Run Out</span> of Heating Oil Again
-                  </h1>
-                  <p className="text-lg md:text-xl text-white/90" data-testid="text-hero-description">
-                    Set it and forget it! Our automatic delivery service monitors your tank and delivers heating oil before you run out. 50+ years of keeping Cape Breton families worry-free.
-                  </p>
-                  <p className="text-base md:text-lg text-chart-2 pt-2" data-testid="text-promise">
-                    ✓ We monitor your usage ✓ Automatic deliveries ✓ Never run out again
-                  </p>
+              <div className="text-white space-y-4">
+                <Badge className="bg-chart-2/20 text-chart-2 border-chart-2/30 text-base px-6 py-2 mb-2" data-testid="badge-peace-of-mind">
+                  <Battery className="w-4 h-4 mr-2 inline" />
+                  Peace of Mind Service
+                </Badge>
+                
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight" data-testid="heading-main">
+                  <span className="text-chart-2">Never Run Out</span> of Heating Oil Again
+                </h1>
+                
+                <p className="text-lg md:text-xl text-white/90" data-testid="text-hero-description">
+                  Set it and forget it! Our automatic delivery service monitors your tank and delivers heating oil before you run out. 50+ years of keeping Cape Breton families worry-free.
+                </p>
+
+                {/* Key Benefits */}
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
+                  <div className="text-center">
+                    <div className="bg-chart-2/20 p-3 rounded-lg inline-block mb-2">
+                      <Gauge className="w-6 h-6 text-chart-2" />
+                    </div>
+                    <h3 className="font-bold text-sm mb-1">Tank Monitoring</h3>
+                    <p className="text-white/80 text-xs">We track usage</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="bg-chart-2/20 p-3 rounded-lg inline-block mb-2">
+                      <Truck className="w-6 h-6 text-chart-2" />
+                    </div>
+                    <h3 className="font-bold text-sm mb-1">Auto Delivery</h3>
+                    <p className="text-white/80 text-xs">On schedule</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="bg-chart-2/20 p-3 rounded-lg inline-block mb-2">
+                      <Shield className="w-6 h-6 text-chart-2" />
+                    </div>
+                    <h3 className="font-bold text-sm mb-1">Never Run Out</h3>
+                    <p className="text-white/80 text-xs">Guaranteed</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="bg-chart-2/20 p-3 rounded-lg inline-block mb-2">
+                      <Bell className="w-6 h-6 text-chart-2" />
+                    </div>
+                    <h3 className="font-bold text-sm mb-1">No Worries</h3>
+                    <p className="text-white/80 text-xs">Set & forget</p>
+                  </div>
+                </div>
+
+                {/* Trust Stats */}
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2 md:px-4 md:py-3 border border-white/20 mt-4">
+                  <div className="grid grid-cols-3 text-center">
+                    <div className="space-y-0.5 px-2 md:px-3 border-r border-white/30">
+                      <div className="text-lg md:text-xl font-bold text-chart-2 leading-tight">1000+</div>
+                      <div className="text-xs leading-snug">Happy Customers</div>
+                    </div>
+                    <div className="space-y-0.5 px-2 md:px-3 border-r border-white/30">
+                      <div className="text-lg md:text-xl font-bold text-chart-2 leading-tight">50+</div>
+                      <div className="text-xs leading-snug">Years Experience</div>
+                    </div>
+                    <div className="space-y-0.5 px-2 md:px-3">
+                      <div className="text-lg md:text-xl font-bold text-chart-2 leading-tight">24/7</div>
+                      <div className="text-xs leading-snug">Emergency Service</div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
