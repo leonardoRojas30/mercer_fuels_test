@@ -118,7 +118,7 @@ export default function AutomaticDelivery() {
         >
           <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/60 z-0"></div>
           
-          <div className="relative z-10 container mx-auto px-4 lg:px-6 flex items-start justify-center pt-[70px] pb-8 md:pt-28 md:pb-12 lg:pt-28 lg:justify-start lg:items-center">
+          <div className="relative z-10 container mx-auto px-4 lg:px-6 flex items-start justify-center pt-[60px] pb-8 md:pt-20 md:pb-12 lg:pt-20 lg:justify-start lg:items-center">
             <div className="grid lg:grid-cols-2 gap-8 items-center w-full">
               {/* Hero Content */}
               <div className="text-white space-y-4">
