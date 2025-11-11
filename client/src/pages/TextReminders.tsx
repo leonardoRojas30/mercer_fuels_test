@@ -69,7 +69,7 @@ export default function TextReminders() {
           <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/60 z-0"></div>
           
           <div className="relative z-10 container mx-auto px-4 lg:px-6 flex items-start justify-center pt-[70px] pb-8 md:pt-28 md:pb-12 lg:pt-28 lg:justify-start lg:items-center">
-            <div className="grid lg:grid-cols-2 gap-8 items-center w-full">
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-6 items-center w-full max-w-6xl">
               {/* Hero Content */}
               <div className="text-white space-y-4 md:space-y-6">
                 <div className="space-y-2">
