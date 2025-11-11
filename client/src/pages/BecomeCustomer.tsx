@@ -109,32 +109,48 @@ export default function BecomeCustomer() {
             <div className="grid lg:grid-cols-2 gap-8 items-center w-full">
               {/* Hero Content */}
               <div className="text-white space-y-4">
-                <div className="space-y-2">
-                  <div className="text-lg font-medium text-chart-2">We're Local, We're Better</div>
-                  <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-                    Join Cape Breton's <span className="text-chart-2">Trusted</span> Oil Family
-                  </h1>
-                  <p className="text-lg md:text-xl text-white/90">
-                    Three generations serving your neighbors. We'll take care of your family with competitive pricing, automatic delivery, and the guarantee you'll never run out.
-                  </p>
-                </div>
+                <Badge className="bg-chart-2/20 text-chart-2 border-chart-2/30 text-base px-6 py-2 mb-2" data-testid="badge-local-better">
+                  <Award className="w-4 h-4 mr-2 inline" />
+                  We're Local, We're Better
+                </Badge>
+                
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+                  Join Cape Breton's <span className="text-chart-2">Trusted</span> Oil Family
+                </h1>
+                
+                <p className="text-lg md:text-xl text-white/90">
+                  Three generations serving your neighbors. We'll take care of your family with competitive pricing, automatic delivery, and the guarantee you'll never run out.
+                </p>
 
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 py-4">
+                {/* Key Benefits */}
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
                   <div className="text-center">
-                    <Shield className="h-8 w-8 mx-auto mb-2 text-chart-2" />
-                    <div className="text-sm font-medium">Never Run Out Guarantee</div>
+                    <div className="bg-chart-2/20 p-3 rounded-lg inline-block mb-2">
+                      <Shield className="w-6 h-6 text-chart-2" />
+                    </div>
+                    <h3 className="font-bold text-sm mb-1">Never Run Out</h3>
+                    <p className="text-white/80 text-xs">Guaranteed</p>
                   </div>
                   <div className="text-center">
-                    <Clock className="h-8 w-8 mx-auto mb-2 text-chart-2" />
-                    <div className="text-sm font-medium">24/7 Support</div>
+                    <div className="bg-chart-2/20 p-3 rounded-lg inline-block mb-2">
+                      <Clock className="w-6 h-6 text-chart-2" />
+                    </div>
+                    <h3 className="font-bold text-sm mb-1">24/7 Support</h3>
+                    <p className="text-white/80 text-xs">Always here</p>
                   </div>
                   <div className="text-center">
-                    <Users className="h-8 w-8 mx-auto mb-2 text-chart-2" />
-                    <div className="text-sm font-medium">Local Family Business</div>
+                    <div className="bg-chart-2/20 p-3 rounded-lg inline-block mb-2">
+                      <Users className="w-6 h-6 text-chart-2" />
+                    </div>
+                    <h3 className="font-bold text-sm mb-1">Local Family</h3>
+                    <p className="text-white/80 text-xs">3rd generation</p>
                   </div>
                   <div className="text-center">
-                    <Award className="h-8 w-8 mx-auto mb-2 text-chart-2" />
-                    <div className="text-sm font-medium">Competitive Pricing</div>
+                    <div className="bg-chart-2/20 p-3 rounded-lg inline-block mb-2">
+                      <DollarSign className="w-6 h-6 text-chart-2" />
+                    </div>
+                    <h3 className="font-bold text-sm mb-1">Best Pricing</h3>
+                    <p className="text-white/80 text-xs">Competitive</p>
                   </div>
                 </div>
 
