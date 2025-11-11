@@ -649,7 +649,7 @@ export default function BudgetPlans() {
                         ) : (
                           <>
                             <Calendar className="w-5 h-5 mr-2" />
-                            Talk to a Heating Expert About Budget Plans
+                            Talk to a Heating Expert
                           </>
                         )}
                       </Button>
