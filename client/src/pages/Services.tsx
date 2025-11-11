@@ -289,18 +289,19 @@ export default function Services() {
               </a>
 
               {/* Text Message Reminders */}
-              <Card className="p-6 h-full opacity-75" data-testid="card-text-reminders">
-                <div className="flex flex-col h-full">
-                  <div className="p-3 rounded-lg bg-chart-2/10 w-fit mb-4">
-                    <MessageCircle className="w-8 h-8 text-chart-2" />
+              <Link href="/textreminders" data-testid="link-text-reminders">
+                <Card className="p-6 hover-elevate h-full" data-testid="card-text-reminders">
+                  <div className="flex flex-col h-full">
+                    <div className="p-3 rounded-lg bg-chart-2/10 w-fit mb-4">
+                      <MessageCircle className="w-8 h-8 text-chart-2" />
+                    </div>
+                    <h3 className="text-xl font-bold mb-3">Text Message Reminders</h3>
+                    <p className="text-muted-foreground flex-grow">
+                      Stay informed with convenient text message updates about deliveries and service appointments.
+                    </p>
                   </div>
-                  <h3 className="text-xl font-bold mb-3">Text Message Reminders</h3>
-                  <p className="text-muted-foreground flex-grow">
-                    Stay informed with convenient text message updates about deliveries and service appointments.
-                  </p>
-                  <Badge variant="secondary" className="w-fit mt-2">Feature Available</Badge>
-                </div>
-              </Card>
+                </Card>
+              </Link>
             </div>
 
             {/* Rewards & Community Section */}
