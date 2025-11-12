@@ -61,11 +61,11 @@ export default function ReviewsSection({
   facebookLink = "https://www.facebook.com/mercerfuels"
 }: ReviewsSectionProps) {
   
-  const renderStars = (rating: number) => {
+  const renderStars = (rating: number, size: string = "w-4 h-4") => {
     return Array.from({ length: 5 }, (_, i) => (
       <Star 
         key={i} 
-        className={`w-4 h-4 ${i < rating ? 'text-yellow-400 fill-current' : 'text-gray-300'}`} 
+        className={`${size} ${i < rating ? 'text-yellow-400 fill-current' : 'text-gray-300'}`} 
       />
     ));
   };
@@ -82,23 +82,23 @@ export default function ReviewsSection({
           </p>
           
           {/* Trust Panel */}
-          <div className="flex flex-col md:flex-row items-center gap-3 md:gap-6 bg-gradient-to-r from-chart-2/10 to-chart-1/10 backdrop-blur-sm rounded-2xl px-4 py-3 md:px-8 md:py-4 border border-chart-2/20 shadow-lg max-w-sm md:max-w-3xl mx-auto">
-            <div className="flex items-center gap-2">
+          <div className="flex flex-col md:flex-row items-center gap-3 md:gap-6 lg:gap-8 bg-gradient-to-r from-chart-2/10 to-chart-1/10 backdrop-blur-sm rounded-2xl px-4 py-3 md:px-8 md:py-6 border border-chart-2/20 shadow-lg max-w-sm md:max-w-3xl mx-auto">
+            <div className="flex items-center gap-2 md:gap-3">
               <div className="flex">
-                {renderStars(5)}
+                {renderStars(5, "w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7")}
               </div>
-              <span className="text-2xl font-bold text-foreground">{overallRating}</span>
+              <span className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">{overallRating}</span>
             </div>
-            <div className="text-muted-foreground">
+            <div className="text-base md:text-lg lg:text-xl text-muted-foreground">
               <span className="font-semibold">{totalReviews.toLocaleString()}</span> reviews
             </div>
             <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
-              <Button variant="outline" size="sm" asChild>
+              <Button variant="outline" size="default" asChild className="md:text-base">
                 <a href={googleLink} target="_blank" rel="noopener noreferrer">
                   Google Reviews
                 </a>
               </Button>
-              <Button variant="outline" size="sm" asChild>
+              <Button variant="outline" size="default" asChild className="md:text-base">
                 <a href={facebookLink} target="_blank" rel="noopener noreferrer">
                   Facebook
                 </a>
