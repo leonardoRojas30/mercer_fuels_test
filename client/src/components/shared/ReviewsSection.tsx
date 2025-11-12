@@ -82,7 +82,7 @@ export default function ReviewsSection({
           </p>
           
           {/* Trust Panel */}
-          <div className="flex flex-col md:flex-row items-center gap-3 md:gap-6 bg-gradient-to-r from-chart-2/10 to-chart-1/10 backdrop-blur-sm rounded-2xl px-4 py-3 md:px-8 md:py-4 border border-chart-2/20 shadow-lg max-w-full">
+          <div className="flex flex-col md:flex-row items-center gap-3 md:gap-6 bg-gradient-to-r from-chart-2/10 to-chart-1/10 backdrop-blur-sm rounded-2xl px-4 py-3 md:px-8 md:py-4 border border-chart-2/20 shadow-lg max-w-sm md:max-w-full mx-auto">
             <div className="flex items-center gap-2">
               <div className="flex">
                 {renderStars(5)}
