@@ -83,7 +83,7 @@ export default function EmergencyCTA({
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 items-center max-w-5xl mx-auto">
           <div className="space-y-6">
             {emergencyFeatures.map((feature, index) => (
               <div key={index} className="flex items-center gap-4">
