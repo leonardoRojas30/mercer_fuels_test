@@ -82,7 +82,7 @@ export default function ReviewsSection({
           </p>
           
           {/* Trust Panel */}
-          <div className="inline-flex items-center gap-6 bg-gradient-to-r from-chart-2/10 to-chart-1/10 backdrop-blur-sm rounded-2xl px-8 py-4 border border-chart-2/20 shadow-lg">
+          <div className="flex flex-col md:flex-row items-center gap-3 md:gap-6 bg-gradient-to-r from-chart-2/10 to-chart-1/10 backdrop-blur-sm rounded-2xl px-4 py-3 md:px-8 md:py-4 border border-chart-2/20 shadow-lg max-w-full">
             <div className="flex items-center gap-2">
               <div className="flex">
                 {renderStars(5)}
@@ -92,7 +92,7 @@ export default function ReviewsSection({
             <div className="text-muted-foreground">
               <span className="font-semibold">{totalReviews.toLocaleString()}</span> reviews
             </div>
-            <div className="flex gap-3">
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
               <Button variant="outline" size="sm" asChild>
                 <a href={googleLink} target="_blank" rel="noopener noreferrer">
                   Google Reviews
