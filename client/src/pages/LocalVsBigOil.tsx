@@ -88,139 +88,149 @@ export default function LocalVsBigOil() {
 
       <PageSection background="default">
         <div className="container mx-auto px-6">
+          {/* Header with Stats Badge */}
           <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 bg-chart-2/10 text-chart-2 px-4 py-2 rounded-full font-semibold text-sm mb-4" data-testid="badge-switchers">
+              <Users className="w-4 h-4" />
+              200+ Families Made the Switch This Year
+            </div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4" data-testid="heading-comparison">
-              The Real Difference: Family Service vs. Corporate Service
+              See Why Cape Breton Families Are Switching
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto" data-testid="text-comparison-intro">
-              Here's what you actually get with each choice - no marketing fluff, just the honest truth about heating oil service in Cape Breton.
+              Real problems with big oil corporations — and how Mercer Fuels solves them.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {/* Big Oil Corporations */}
-            <Card className="hover-elevate transition-all duration-300 bg-muted border-border shadow-lg" data-testid="card-big-oil">
-              <CardHeader className="text-center bg-muted">
-                <div className="flex items-center justify-center gap-3 mb-2">
-                  <Building2 className="w-8 h-8 text-muted-foreground" />
-                  <CardTitle className="text-2xl">Big Oil Corporations</CardTitle>
+          {/* Comparison Cards Grid */}
+          <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+            
+            {/* Comparison 1: Phone Service */}
+            <Card className="overflow-hidden border-0 shadow-lg hover-elevate transition-all duration-300" data-testid="card-comparison-phone">
+              <div className="bg-gray-100 px-5 py-3 border-b-2 border-gray-200">
+                <div className="flex items-center gap-2 text-gray-600">
+                  <div className="w-5 h-5 rounded-full bg-gray-400 flex items-center justify-center text-white text-xs font-bold">✗</div>
+                  <span className="text-sm font-medium">Automated phone systems waste your time</span>
                 </div>
-                <CardDescription className="font-medium">Irving Oil, Ultramar, Shell, etc.</CardDescription>
-              </CardHeader>
-              <CardContent className="pt-6">
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3" data-testid="issue-phone-service">
-                    <div className="w-6 h-6 bg-muted-foreground rounded-full flex items-center justify-center text-white text-sm font-bold flex-shrink-0 mt-1">✗</div>
-                    <div>
-                      <h4 className="font-semibold mb-1">Phone Tree Hell</h4>
-                      <p className="text-muted-foreground text-sm">"Press 1 for billing, Press 2 for delivery..." You'll spend 15 minutes just trying to reach a human.</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3" data-testid="issue-account-number">
-                    <div className="w-6 h-6 bg-muted-foreground rounded-full flex items-center justify-center text-white text-sm font-bold flex-shrink-0 mt-1">✗</div>
-                    <div>
-                      <h4 className="font-semibold mb-1">You're Just a Number</h4>
-                      <p className="text-muted-foreground text-sm">Account #47291853. They don't know your name, your property, or your heating needs.</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3" data-testid="issue-regional-dispatch">
-                    <div className="w-6 h-6 bg-muted-foreground rounded-full flex items-center justify-center text-white text-sm font-bold flex-shrink-0 mt-1">✗</div>
-                    <div>
-                      <h4 className="font-semibold mb-1">Regional Dispatch Delays</h4>
-                      <p className="text-muted-foreground text-sm">Emergency service routed through Halifax or Moncton. Extra delays when you need heating oil most.</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3" data-testid="issue-corporate-policies">
-                    <div className="w-6 h-6 bg-muted-foreground rounded-full flex items-center justify-center text-white text-sm font-bold flex-shrink-0 mt-1">✗</div>
-                    <div>
-                      <h4 className="font-semibold mb-1">Inflexible Corporate Policies</h4>
-                      <p className="text-muted-foreground text-sm">"Sorry, that's company policy." No exceptions, no understanding of your unique situation.</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3" data-testid="issue-standardized-pricing">
-                    <div className="w-6 h-6 bg-muted-foreground rounded-full flex items-center justify-center text-white text-sm font-bold flex-shrink-0 mt-1">✗</div>
-                    <div>
-                      <h4 className="font-semibold mb-1">Standardized High Pricing</h4>
-                      <p className="text-muted-foreground text-sm">Corporate overhead, shareholder profits, and executive bonuses all built into your heating oil price.</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3" data-testid="issue-limited-local-knowledge">
-                    <div className="w-6 h-6 bg-muted-foreground rounded-full flex items-center justify-center text-white text-sm font-bold flex-shrink-0 mt-1">✗</div>
-                    <div>
-                      <h4 className="font-semibold mb-1">Limited Local Knowledge</h4>
-                      <p className="text-muted-foreground text-sm">Regional operations don't understand Cape Breton's unique weather, roads, and community needs.</p>
-                    </div>
+              </div>
+              <div className="bg-gradient-to-br from-chart-2 to-chart-2/90 px-6 py-6 text-white">
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-chart-2 text-lg font-bold flex-shrink-0 mt-0.5">✓</div>
+                  <div>
+                    <h3 className="text-lg font-bold mb-2">Direct Line to Real People</h3>
+                    <p className="text-white/95 text-sm leading-relaxed">
+                      Call (902) 539-4242 and speak to our Cape Breton team immediately. No menu options, no hold music, no frustration — just real people ready to help.
+                    </p>
                   </div>
                 </div>
-              </CardContent>
+              </div>
             </Card>
 
-            {/* Local Family Business */}
-            <Card className="hover-elevate transition-all duration-300 bg-chart-2/5 border-chart-2/20 shadow-lg" data-testid="card-local-family">
-              <CardHeader className="text-center bg-primary/10">
-                <div className="flex items-center justify-center gap-3 mb-2">
-                  <Heart className="w-8 h-8 text-primary" />
-                  <CardTitle className="text-2xl text-primary">Local Family Business</CardTitle>
+            {/* Comparison 2: Personal Service */}
+            <Card className="overflow-hidden border-0 shadow-lg hover-elevate transition-all duration-300" data-testid="card-comparison-personal">
+              <div className="bg-gray-100 px-5 py-3 border-b-2 border-gray-200">
+                <div className="flex items-center gap-2 text-gray-600">
+                  <div className="w-5 h-5 rounded-full bg-gray-400 flex items-center justify-center text-white text-xs font-bold">✗</div>
+                  <span className="text-sm font-medium">You're just an account number</span>
                 </div>
-                <CardDescription className="text-primary/80 font-medium">Mercer Fuels - 50+ Years Cape Breton</CardDescription>
-              </CardHeader>
-              <CardContent className="pt-6">
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3" data-testid="advantage-direct-line">
-                    <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center text-white text-sm font-bold flex-shrink-0 mt-1">✓</div>
-                    <div>
-                      <h4 className="font-semibold text-primary mb-1">Direct Line to Our Team</h4>
-                      <p className="text-primary/80 text-sm">Call (902) 539-4242 and speak directly to our Cape Breton team. No phone trees, no transfers.</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3" data-testid="advantage-personal-relationship">
-                    <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center text-white text-sm font-bold flex-shrink-0 mt-1">✓</div>
-                    <div>
-                      <h4 className="font-semibold text-primary mb-1">We Know You by Name</h4>
-                      <p className="text-primary/80 text-sm">Personal relationships matter. We know your heating needs, your property, and your family.</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3" data-testid="advantage-local-response">
-                    <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center text-white text-sm font-bold flex-shrink-0 mt-1">✓</div>
-                    <div>
-                      <h4 className="font-semibold text-primary mb-1">Local 24/7 Emergency Service</h4>
-                      <p className="text-primary/80 text-sm">Our Cape Breton team responds directly. Same-day emergency delivery when possible.</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3" data-testid="advantage-flexible-service">
-                    <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center text-white text-sm font-bold flex-shrink-0 mt-1">✓</div>
-                    <div>
-                      <h4 className="font-semibold text-primary mb-1">Flexible & Understanding</h4>
-                      <p className="text-primary/80 text-sm">Family business means we understand life happens. We work with you on special circumstances.</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3" data-testid="advantage-competitive-pricing">
-                    <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center text-white text-sm font-bold flex-shrink-0 mt-1">✓</div>
-                    <div>
-                      <h4 className="font-semibold text-primary mb-1">Competitive Local Pricing</h4>
-                      <p className="text-primary/80 text-sm">No corporate overhead or executive bonuses. Family business efficiency means better prices for you.</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3" data-testid="advantage-local-expertise">
-                    <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center text-white text-sm font-bold flex-shrink-0 mt-1">✓</div>
-                    <div>
-                      <h4 className="font-semibold text-primary mb-1">50+ Years Cape Breton Expertise</h4>
-                      <p className="text-primary/80 text-sm">We know every street, every weather pattern, every delivery challenge in Cape Breton. True local expertise.</p>
-                    </div>
+              </div>
+              <div className="bg-gradient-to-br from-chart-2 to-chart-2/90 px-6 py-6 text-white">
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-chart-2 text-lg font-bold flex-shrink-0 mt-0.5">✓</div>
+                  <div>
+                    <h3 className="text-lg font-bold mb-2">We Know You by Name</h3>
+                    <p className="text-white/95 text-sm leading-relaxed">
+                      Personal relationships matter. We remember your heating needs, your property details, and your family. You're a valued neighbor, not account #47291853.
+                    </p>
                   </div>
                 </div>
-              </CardContent>
+              </div>
             </Card>
+
+            {/* Comparison 3: Emergency Response */}
+            <Card className="overflow-hidden border-0 shadow-lg hover-elevate transition-all duration-300" data-testid="card-comparison-emergency">
+              <div className="bg-gray-100 px-5 py-3 border-b-2 border-gray-200">
+                <div className="flex items-center gap-2 text-gray-600">
+                  <div className="w-5 h-5 rounded-full bg-gray-400 flex items-center justify-center text-white text-xs font-bold">✗</div>
+                  <span className="text-sm font-medium">Regional dispatch causes delays</span>
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-chart-2 to-chart-2/90 px-6 py-6 text-white">
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-chart-2 text-lg font-bold flex-shrink-0 mt-0.5">✓</div>
+                  <div>
+                    <h3 className="text-lg font-bold mb-2">Local 24/7 Emergency Service</h3>
+                    <p className="text-white/95 text-sm leading-relaxed">
+                      Our Cape Breton team responds directly to your emergency. No routing through Halifax or Moncton. Same-day delivery when possible because we're right here.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            {/* Comparison 4: Flexibility */}
+            <Card className="overflow-hidden border-0 shadow-lg hover-elevate transition-all duration-300" data-testid="card-comparison-flexibility">
+              <div className="bg-gray-100 px-5 py-3 border-b-2 border-gray-200">
+                <div className="flex items-center gap-2 text-gray-600">
+                  <div className="w-5 h-5 rounded-full bg-gray-400 flex items-center justify-center text-white text-xs font-bold">✗</div>
+                  <span className="text-sm font-medium">"Sorry, that's company policy"</span>
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-chart-2 to-chart-2/90 px-6 py-6 text-white">
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-chart-2 text-lg font-bold flex-shrink-0 mt-0.5">✓</div>
+                  <div>
+                    <h3 className="text-lg font-bold mb-2">Flexible & Understanding</h3>
+                    <p className="text-white/95 text-sm leading-relaxed">
+                      Family business means we understand life happens. Need to adjust your delivery schedule? Having a tough month? We work with you, not against you.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            {/* Comparison 5: Pricing */}
+            <Card className="overflow-hidden border-0 shadow-lg hover-elevate transition-all duration-300" data-testid="card-comparison-pricing">
+              <div className="bg-gray-100 px-5 py-3 border-b-2 border-gray-200">
+                <div className="flex items-center gap-2 text-gray-600">
+                  <div className="w-5 h-5 rounded-full bg-gray-400 flex items-center justify-center text-white text-xs font-bold">✗</div>
+                  <span className="text-sm font-medium">High prices fund corporate overhead</span>
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-chart-2 to-chart-2/90 px-6 py-6 text-white">
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-chart-2 text-lg font-bold flex-shrink-0 mt-0.5">✓</div>
+                  <div>
+                    <h3 className="text-lg font-bold mb-2">Competitive Local Pricing</h3>
+                    <p className="text-white/95 text-sm leading-relaxed">
+                      No shareholder profits or executive bonuses in your price. Family business efficiency and local operations mean better value for Cape Breton families.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            {/* Comparison 6: Local Expertise */}
+            <Card className="overflow-hidden border-0 shadow-lg hover-elevate transition-all duration-300" data-testid="card-comparison-expertise">
+              <div className="bg-gray-100 px-5 py-3 border-b-2 border-gray-200">
+                <div className="flex items-center gap-2 text-gray-600">
+                  <div className="w-5 h-5 rounded-full bg-gray-400 flex items-center justify-center text-white text-xs font-bold">✗</div>
+                  <span className="text-sm font-medium">Don't understand local conditions</span>
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-chart-2 to-chart-2/90 px-6 py-6 text-white">
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-chart-2 text-lg font-bold flex-shrink-0 mt-0.5">✓</div>
+                  <div>
+                    <h3 className="text-lg font-bold mb-2">50+ Years Cape Breton Expertise</h3>
+                    <p className="text-white/95 text-sm leading-relaxed">
+                      We know every street, every weather pattern, every delivery challenge in Cape Breton. Born and raised here — true local expertise you can trust.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
           </div>
         </div>
       </PageSection>
