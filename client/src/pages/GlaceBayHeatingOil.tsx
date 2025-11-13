@@ -139,19 +139,19 @@ export default function GlaceBayHeatingOil() {
                 </div>
 
                 {/* Trust Stats */}
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                  <div className="grid grid-cols-3 gap-4 text-center">
-                    <div>
-                      <div className="text-2xl font-bold text-chart-2">50+</div>
-                      <div className="text-sm">Years Experience</div>
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2 md:px-4 md:py-3 border border-white/20 mt-4">
+                  <div className="grid grid-cols-3 text-center">
+                    <div className="space-y-0.5 px-2 md:px-3 border-r border-white/30">
+                      <div className="text-lg md:text-xl font-bold text-chart-2 leading-tight">50+</div>
+                      <div className="text-xs leading-snug">Years Experience</div>
                     </div>
-                    <div>
-                      <div className="text-2xl font-bold text-chart-2">Thousands</div>
-                      <div className="text-sm">Happy Customers</div>
+                    <div className="space-y-0.5 px-2 md:px-3 border-r border-white/30">
+                      <div className="text-lg md:text-xl font-bold text-chart-2 leading-tight">Thousands</div>
+                      <div className="text-xs leading-snug">Happy Customers</div>
                     </div>
-                    <div>
-                      <div className="text-2xl font-bold text-chart-2">200+</div>
-                      <div className="text-sm">5-Star Reviews</div>
+                    <div className="space-y-0.5 px-2 md:px-3">
+                      <div className="text-lg md:text-xl font-bold text-chart-2 leading-tight">200+</div>
+                      <div className="text-xs leading-snug">5-Star Reviews</div>
                     </div>
                   </div>
                 </div>
