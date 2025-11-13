@@ -125,16 +125,16 @@ export default function GlaceBayHeatingOil() {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                  <Button size="lg" className="w-full sm:w-auto" data-testid="button-call-glace-bay" asChild>
+                  <Button size="lg" className="!bg-chart-2 !text-white hover:!bg-chart-2/90 w-full sm:w-auto" data-testid="button-consultation-glace-bay" asChild>
+                    <Link href="/schedule-consultation">
+                      Schedule Consultation
+                    </Link>
+                  </Button>
+                  <Button size="lg" className="!bg-white !text-gray-900 hover:!bg-gray-100 w-full sm:w-auto" data-testid="button-call-glace-bay" asChild>
                     <a href="tel:902-539-4242">
                       <Phone className="mr-2 h-5 w-5" />
                       Call (902) 539-4242
                     </a>
-                  </Button>
-                  <Button size="lg" variant="outline" className="w-full sm:w-auto" data-testid="button-consultation-glace-bay" asChild>
-                    <Link href="/schedule-consultation">
-                      Schedule Consultation
-                    </Link>
                   </Button>
                 </div>
 
@@ -378,16 +378,16 @@ export default function GlaceBayHeatingOil() {
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4 max-w-lg mx-auto">
-            <Button size="lg" variant="secondary" className="w-full sm:w-auto" data-testid="button-call-cta-glace-bay" asChild>
+            <Button size="lg" className="!bg-chart-2 !text-white hover:!bg-chart-2/90 w-full sm:w-auto" data-testid="button-consultation-cta-glace-bay" asChild>
+              <Link href="/schedule-consultation">
+                Schedule Free Consultation
+              </Link>
+            </Button>
+            <Button size="lg" className="!bg-white !text-gray-900 hover:!bg-gray-100 w-full sm:w-auto" data-testid="button-call-cta-glace-bay" asChild>
               <a href="tel:902-539-4242">
                 <Phone className="mr-2 h-5 w-5" />
                 Call (902) 539-4242
               </a>
-            </Button>
-            <Button size="lg" variant="outline" className="w-full sm:w-auto" data-testid="button-consultation-cta-glace-bay" asChild>
-              <Link href="/schedule-consultation">
-                Schedule Free Consultation
-              </Link>
             </Button>
           </div>
         </div>
