@@ -146,7 +146,7 @@ export default function GlaceBayHeatingOil() {
                       <div className="text-xs leading-snug">Years Experience</div>
                     </div>
                     <div className="space-y-0.5 px-2 md:px-3 border-r border-white/30">
-                      <div className="text-lg md:text-xl font-bold text-chart-2 leading-tight">Thousands</div>
+                      <div className="text-lg md:text-xl font-bold text-chart-2 leading-tight">1000+</div>
                       <div className="text-xs leading-snug">Happy Customers</div>
                     </div>
                     <div className="space-y-0.5 px-2 md:px-3">
