@@ -377,14 +377,14 @@ export default function GlaceBayHeatingOil() {
             Join thousands of satisfied Glace Bay customers who trust Mercer Fuels for their heating oil needs.
           </p>
           
-          <div className="flex justify-center gap-4">
-            <Button size="lg" variant="secondary" data-testid="button-call-cta-glace-bay" asChild>
+          <div className="flex flex-col sm:flex-row justify-center gap-4 max-w-lg mx-auto">
+            <Button size="lg" variant="secondary" className="w-full sm:w-auto" data-testid="button-call-cta-glace-bay" asChild>
               <a href="tel:902-539-4242">
                 <Phone className="mr-2 h-5 w-5" />
                 Call (902) 539-4242
               </a>
             </Button>
-            <Button size="lg" variant="outline" data-testid="button-consultation-cta-glace-bay" asChild>
+            <Button size="lg" variant="outline" className="w-full sm:w-auto" data-testid="button-consultation-cta-glace-bay" asChild>
               <Link href="/schedule-consultation">
                 Schedule Free Consultation
               </Link>
