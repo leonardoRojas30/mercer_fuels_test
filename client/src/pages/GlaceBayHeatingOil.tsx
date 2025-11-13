@@ -124,7 +124,7 @@ export default function GlaceBayHeatingOil() {
                   </div>
                 </div>
 
-                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
                   <Button size="lg" className="!bg-chart-2 !text-white hover:!bg-chart-2/90 w-full sm:w-auto" data-testid="button-consultation-glace-bay" asChild>
                     <Link href="/schedule-consultation">
                       Schedule Consultation
@@ -158,7 +158,7 @@ export default function GlaceBayHeatingOil() {
               </div>
 
               {/* Quick Contact Form */}
-              <Card className="max-w-md w-full lg:ml-auto mx-auto lg:mx-0" data-testid="card-contact-glace-bay">
+              <Card className="max-w-lg w-full lg:ml-auto mx-auto lg:mx-0" data-testid="card-contact-glace-bay">
                 <CardHeader>
                   <CardTitle className="text-center">Talk to a Heating Expert</CardTitle>
                   <CardDescription className="text-center">
