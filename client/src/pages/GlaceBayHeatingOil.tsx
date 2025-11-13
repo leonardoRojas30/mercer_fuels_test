@@ -91,16 +91,16 @@ export default function GlaceBayHeatingOil() {
         >
           <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/60 z-0"></div>
           
-          <div className="relative z-10 container mx-auto px-4 lg:px-6 flex items-center pt-[70px] pb-8 md:pt-28 md:pb-12 lg:pt-16 lg:justify-start lg:items-center">
-            <div className="grid lg:grid-cols-2 gap-8 items-center w-full">
+          <div className="relative z-10 container mx-auto px-4 lg:px-6 pt-[70px] pb-8 md:pt-28 md:pb-12 lg:pt-16">
+            <div className="grid lg:grid-cols-2 gap-8 items-start lg:items-center w-full">
               {/* Hero Content */}
               <div className="text-white space-y-6">
                 <div className="space-y-2">
-                  <div className="text-lg font-medium text-chart-2">We're Local, We're Better</div>
-                  <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
+                  <div className="text-base sm:text-lg font-medium text-chart-2">We're Local, We're Better</div>
+                  <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
                     Glace Bay's Trusted <span className="text-chart-2">Heating Oil</span> Experts
                   </h1>
-                  <p className="text-xl text-white/90">
+                  <p className="text-lg sm:text-xl text-white/90">
                     Serving Glace Bay families for over 50 years with reliable heating oil delivery, competitive prices, and never run out guarantee.
                   </p>
                 </div>
@@ -124,14 +124,14 @@ export default function GlaceBayHeatingOil() {
                   </div>
                 </div>
 
-                <div className="flex gap-4">
-                  <Button size="lg" data-testid="button-call-glace-bay" asChild>
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                  <Button size="lg" className="w-full sm:w-auto" data-testid="button-call-glace-bay" asChild>
                     <a href="tel:902-539-4242">
                       <Phone className="mr-2 h-5 w-5" />
                       Call (902) 539-4242
                     </a>
                   </Button>
-                  <Button size="lg" variant="outline" data-testid="button-consultation-glace-bay" asChild>
+                  <Button size="lg" variant="outline" className="w-full sm:w-auto" data-testid="button-consultation-glace-bay" asChild>
                     <Link href="/schedule-consultation">
                       Schedule Consultation
                     </Link>
@@ -158,7 +158,7 @@ export default function GlaceBayHeatingOil() {
               </div>
 
               {/* Quick Contact Form */}
-              <Card className="max-w-md ml-auto" data-testid="card-contact-glace-bay">
+              <Card className="max-w-md w-full lg:ml-auto mx-auto lg:mx-0" data-testid="card-contact-glace-bay">
                 <CardHeader>
                   <CardTitle className="text-center">Talk to a Heating Expert</CardTitle>
                   <CardDescription className="text-center">
