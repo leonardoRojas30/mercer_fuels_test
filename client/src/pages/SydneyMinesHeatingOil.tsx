@@ -76,16 +76,16 @@ export default function SydneyMinesHeatingOil() {
         >
           <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/60 z-0"></div>
           
-          <div className="relative z-10 container mx-auto px-4 lg:px-6 flex items-center pt-[70px] pb-8 md:pt-28 md:pb-12 lg:pt-16 lg:justify-start lg:items-center">
-            <div className="grid lg:grid-cols-2 gap-8 items-center w-full">
+          <div className="relative z-10 container mx-auto px-4 lg:px-6 flex items-center min-h-[600px] md:min-h-[600px] lg:min-h-[600px]">
+            <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
               {/* Hero Content */}
               <div className="text-white space-y-6">
                 <div className="space-y-2">
-                  <div className="text-lg font-medium text-chart-2">We're Local, We're Better</div>
-                  <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
+                  <div className="text-base sm:text-lg font-medium text-chart-2">We're Local, We're Better</div>
+                  <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
                     Sydney Mines' Trusted <span className="text-chart-2">Heating Oil</span> Experts
                   </h1>
-                  <p className="text-xl text-white/90">
+                  <p className="text-lg sm:text-xl text-white/90">
                     Serving Sydney Mines families for over 50 years with reliable heating oil delivery, competitive prices, and never run out guarantee.
                   </p>
                 </div>
@@ -109,41 +109,41 @@ export default function SydneyMinesHeatingOil() {
                   </div>
                 </div>
 
-                <div className="flex gap-4">
-                  <Button size="lg" data-testid="button-call-sydney-mines" asChild>
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
+                  <Button size="lg" className="!bg-chart-2 !text-white hover:!bg-chart-2/90 w-full sm:w-auto" data-testid="button-consultation-sydney-mines" asChild>
+                    <Link href="/schedule-consultation">
+                      Schedule Consultation
+                    </Link>
+                  </Button>
+                  <Button size="lg" className="!bg-white !text-gray-900 hover:!bg-gray-100 w-full sm:w-auto" data-testid="button-call-sydney-mines" asChild>
                     <a href="tel:902-539-4242">
                       <Phone className="mr-2 h-5 w-5" />
                       Call (902) 539-4242
                     </a>
                   </Button>
-                  <Button size="lg" variant="outline" data-testid="button-consultation-sydney-mines" asChild>
-                    <Link href="/schedule-consultation">
-                      Schedule Consultation
-                    </Link>
-                  </Button>
                 </div>
 
                 {/* Trust Stats */}
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                  <div className="grid grid-cols-3 gap-4 text-center">
-                    <div>
-                      <div className="text-2xl font-bold text-chart-2">50+</div>
-                      <div className="text-sm">Years Experience</div>
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2 md:px-4 md:py-3 border border-white/20 mt-4">
+                  <div className="grid grid-cols-3 text-center">
+                    <div className="space-y-0.5 px-2 md:px-3 border-r border-white/30">
+                      <div className="text-lg md:text-xl font-bold text-chart-2 leading-tight">50+</div>
+                      <div className="text-xs leading-snug">Years Experience</div>
                     </div>
-                    <div>
-                      <div className="text-2xl font-bold text-chart-2">Thousands</div>
-                      <div className="text-sm">Happy Customers</div>
+                    <div className="space-y-0.5 px-2 md:px-3 border-r border-white/30">
+                      <div className="text-lg md:text-xl font-bold text-chart-2 leading-tight">1000+</div>
+                      <div className="text-xs leading-snug">Happy Customers</div>
                     </div>
-                    <div>
-                      <div className="text-2xl font-bold text-chart-2">200+</div>
-                      <div className="text-sm">5-Star Reviews</div>
+                    <div className="space-y-0.5 px-2 md:px-3">
+                      <div className="text-lg md:text-xl font-bold text-chart-2 leading-tight">200+</div>
+                      <div className="text-xs leading-snug">5-Star Reviews</div>
                     </div>
                   </div>
                 </div>
               </div>
 
               {/* Quick Contact Form */}
-              <Card className="max-w-md ml-auto" data-testid="card-contact-sydney-mines">
+              <Card className="max-w-lg w-full lg:ml-auto mx-auto lg:mx-0" data-testid="card-contact-sydney-mines">
                 <CardHeader>
                   <CardTitle className="text-center">Talk to a Heating Expert</CardTitle>
                   <CardDescription className="text-center">
@@ -362,17 +362,17 @@ export default function SydneyMinesHeatingOil() {
             Join thousands of satisfied Sydney Mines customers who trust Mercer Fuels for their heating oil needs.
           </p>
           
-          <div className="flex justify-center gap-4">
-            <Button size="lg" variant="secondary" data-testid="button-call-cta-sydney-mines" asChild>
+          <div className="flex flex-col sm:flex-row justify-center gap-4 max-w-lg mx-auto">
+            <Button size="lg" className="!bg-chart-2 !text-white hover:!bg-chart-2/90 w-full sm:w-auto" data-testid="button-consultation-cta-sydney-mines" asChild>
+              <Link href="/schedule-consultation">
+                Schedule Free Consultation
+              </Link>
+            </Button>
+            <Button size="lg" className="!bg-white !text-gray-900 hover:!bg-gray-100 w-full sm:w-auto" data-testid="button-call-cta-sydney-mines" asChild>
               <a href="tel:902-539-4242">
                 <Phone className="mr-2 h-5 w-5" />
                 Call (902) 539-4242
               </a>
-            </Button>
-            <Button size="lg" variant="outline" data-testid="button-consultation-cta-sydney-mines" asChild>
-              <Link href="/schedule-consultation">
-                Schedule Free Consultation
-              </Link>
             </Button>
           </div>
         </div>
