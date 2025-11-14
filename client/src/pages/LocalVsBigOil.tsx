@@ -70,6 +70,7 @@ export default function LocalVsBigOil() {
         description="Why thousands of Cape Breton families are choosing personal service over corporate bureaucracy. See the real difference for yourself."
         bullets={heroBullets}
         textAlignment="center"
+        gridBreakpoint="xl"
       >
         <CTAGroup
           primary={{
