@@ -40,6 +40,16 @@ export default function HeroSection({
     center: "text-center"
   };
 
+  const contentAlignmentClasses = {
+    left: "",
+    center: "mx-auto max-w-4xl"
+  };
+
+  const descriptionClasses = {
+    left: "max-w-2xl",
+    center: "max-w-2xl mx-auto"
+  };
+
   const breakpointClasses = {
     lg: {
       container: "lg:px-6",
@@ -66,7 +76,7 @@ export default function HeroSection({
       
       <div className={`container mx-auto px-4 ${breakpointClasses[gridBreakpoint].container} relative z-10`}>
         <div className={`grid ${breakpointClasses[gridBreakpoint].grid} gap-12 items-center ${textAlignmentClasses[textAlignment]}`}>
-          <div className="space-y-8">
+          <div className={`space-y-8 ${contentAlignmentClasses[textAlignment]}`}>
             {tagline && (
               <p className="text-chart-2 font-semibold text-lg tracking-wide uppercase">
                 {tagline}
@@ -77,12 +87,12 @@ export default function HeroSection({
               {headline}
             </h1>
             
-            <p className="text-xl text-white/90 leading-relaxed max-w-2xl">
+            <p className={`text-xl text-white/90 leading-relaxed ${descriptionClasses[textAlignment]}`}>
               {description}
             </p>
             
             {bullets.length > 0 && (
-              <div className={`grid grid-cols-2 ${breakpointClasses[gridBreakpoint].bullets} gap-6 pt-8`}>
+              <div className={`grid grid-cols-2 ${breakpointClasses[gridBreakpoint].bullets} gap-6 pt-8 max-w-3xl ${textAlignment === 'center' ? 'mx-auto' : ''}`}>
                 {bullets.map((bullet, index) => (
                   <div key={index} className="text-center">
                     <div className="mb-3">
