@@ -18,6 +18,7 @@ interface CTAGroupProps {
   emergency?: CTAProps;
   alignment?: "left" | "center" | "right";
   spacing?: "sm" | "md" | "lg";
+  buttonScale?: "sm" | "md" | "lg";
   subtitle?: string;
 }
 
@@ -27,6 +28,7 @@ export default function CTAGroup({
   emergency,
   alignment = "center",
   spacing = "md",
+  buttonScale = "lg",
   subtitle 
 }: CTAGroupProps) {
   const alignmentClasses = {
@@ -41,12 +43,31 @@ export default function CTAGroup({
     lg: "mt-16"
   };
 
+  const buttonScaleClasses = {
+    sm: {
+      primary: "bg-chart-2 text-white font-bold px-5 py-3 text-base shadow-lg transition-all",
+      outline: "bg-white text-gray-900 border-2 border-white hover:bg-gray-100 font-semibold px-5 py-3 text-base shadow-lg transition-all",
+      default: "font-semibold transition-all"
+    },
+    md: {
+      primary: "bg-chart-2 text-white font-bold px-6 py-3 text-base shadow-lg transition-all",
+      outline: "bg-white text-gray-900 border-2 border-white hover:bg-gray-100 font-semibold px-6 py-3 text-base shadow-lg transition-all",
+      default: "font-semibold transition-all"
+    },
+    lg: {
+      primary: "bg-chart-2 text-white font-bold px-8 py-4 text-lg shadow-lg transition-all",
+      outline: "bg-white text-gray-900 border-2 border-white hover:bg-gray-100 font-semibold px-8 py-4 text-lg shadow-lg transition-all",
+      default: "font-semibold transition-all"
+    }
+  };
+
   const renderCTA = (cta: CTAProps, isPrimary = false) => {
+    const scaleClasses = buttonScaleClasses[buttonScale];
     const buttonClasses = isPrimary ? 
-      "bg-chart-2 text-white font-bold px-8 py-4 text-lg shadow-lg transition-all" :
+      scaleClasses.primary :
       cta.variant === "outline" ? 
-        "bg-white text-gray-900 border-2 border-white hover:bg-gray-100 font-semibold px-8 py-4 text-lg shadow-lg transition-all" :
-        "font-semibold transition-all";
+        scaleClasses.outline :
+        scaleClasses.default;
 
     if (cta.phone) {
       return (

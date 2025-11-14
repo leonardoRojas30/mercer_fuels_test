@@ -73,6 +73,7 @@ export default function LocalVsBigOil() {
         gridBreakpoint="xl"
       >
         <CTAGroup
+          buttonScale="sm"
           primary={{
             text: "Experience the Difference",
             phone: "902-539-4242",
