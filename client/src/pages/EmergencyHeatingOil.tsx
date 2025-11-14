@@ -90,13 +90,13 @@ export default function EmergencyHeatingOil() {
                 24/7 Emergency Service
               </Badge>
               <h1 className="text-4xl md:text-6xl font-bold mb-6" data-testid="heading-main">
-                <span className="text-primary">Ran Out</span> of Heating Oil?
+                <span className="text-chart-2">Ran Out</span> of Heating Oil?
               </h1>
               <p className="text-xl md:text-2xl mb-8 text-gray-100" data-testid="text-hero-description">
                 Don't panic! Same-day emergency delivery available across Cape Breton. Local family business with 50+ years of keeping families warm.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-primary border-primary text-primary-foreground font-bold px-8 py-4 text-lg animate-pulse" onClick={handleEmergencyCall} data-testid="button-emergency-call">
+                <Button size="lg" className="bg-chart-2 border-chart-2 text-gray-900 font-bold px-8 py-4 text-lg animate-pulse" onClick={handleEmergencyCall} data-testid="button-emergency-call">
                   <PhoneCall className="w-6 h-6 mr-2" />
                   CALL NOW: (902) 539-4242
                 </Button>
