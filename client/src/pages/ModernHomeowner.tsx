@@ -158,7 +158,7 @@ export default function ModernHomeowner() {
                   <Smartphone className="mr-2 h-5 w-5" />
                   Explore Smart Features
                 </Button>
-                <Button size="lg" className="bg-primary border-primary text-primary-foreground" data-testid="button-get-started">
+                <Button size="lg" className="bg-chart-2 border-chart-2 text-gray-900" data-testid="button-get-started">
                   <Settings className="mr-2 h-5 w-5" />
                   Get Started Today
                 </Button>
