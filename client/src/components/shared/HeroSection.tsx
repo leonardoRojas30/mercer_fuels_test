@@ -68,7 +68,7 @@ export default function HeroSection({
   };
 
   return (
-    <section className="relative min-h-[600px] flex items-center bg-chart-3" style={backgroundStyle}>
+    <section className="relative min-h-[600px] flex items-center bg-chart-3 py-12 md:py-0" style={backgroundStyle}>
       {/* Overlay for better text readability */}
       {overlay && backgroundImage && (
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40"></div>
@@ -106,7 +106,7 @@ export default function HeroSection({
           </div>
           
           {children && (
-            <div className={`flex justify-center mt-8 ${breakpointClasses[gridBreakpoint].cta}`}>
+            <div className={`flex justify-center mt-4 md:mt-8 ${breakpointClasses[gridBreakpoint].cta}`}>
               {children}
             </div>
           )}
