@@ -54,15 +54,15 @@ export default function HeroSection({
     lg: {
       container: "lg:px-6",
       grid: "lg:grid-cols-2",
-      heading: "lg:text-6xl",
-      bullets: "lg:grid-cols-4",
+      heading: "lg:text-7xl",
+      bullets: "lg:grid-cols-3",
       cta: "lg:justify-end lg:mt-0"
     },
     xl: {
       container: "xl:px-6",
       grid: "xl:grid-cols-2",
-      heading: "xl:text-6xl",
-      bullets: "xl:grid-cols-4",
+      heading: "xl:text-7xl",
+      bullets: "xl:grid-cols-3",
       cta: "xl:justify-end xl:mt-0"
     }
   };
@@ -76,14 +76,14 @@ export default function HeroSection({
       
       <div className={`container mx-auto px-4 ${breakpointClasses[gridBreakpoint].container} relative z-10`}>
         <div className={`grid ${breakpointClasses[gridBreakpoint].grid} gap-12 items-center ${textAlignmentClasses[textAlignment]}`}>
-          <div className={`space-y-8 ${contentAlignmentClasses[textAlignment]}`}>
+          <div className={`space-y-6 ${contentAlignmentClasses[textAlignment]} ${textAlignment === 'center' ? 'pt-12' : ''}`}>
             {tagline && (
               <p className="text-chart-2 font-semibold text-lg tracking-wide uppercase">
                 {tagline}
               </p>
             )}
             
-            <h1 className={`text-4xl ${breakpointClasses[gridBreakpoint].heading} font-bold text-white leading-tight`}>
+            <h1 className={`text-5xl ${breakpointClasses[gridBreakpoint].heading} font-bold text-white leading-tight`}>
               {headline}
             </h1>
             
@@ -92,13 +92,13 @@ export default function HeroSection({
             </p>
             
             {bullets.length > 0 && (
-              <div className={`grid grid-cols-2 ${breakpointClasses[gridBreakpoint].bullets} gap-6 pt-8 max-w-3xl ${textAlignment === 'center' ? 'mx-auto' : ''}`}>
+              <div className={`grid grid-cols-3 ${breakpointClasses[gridBreakpoint].bullets} gap-4 pt-4 max-w-3xl ${textAlignment === 'center' ? 'mx-auto' : ''}`}>
                 {bullets.map((bullet, index) => (
                   <div key={index} className="text-center">
                     <div className="mb-3">
-                      <bullet.icon className="h-12 w-12 text-chart-2 mx-auto" />
+                      <bullet.icon className="h-10 w-10 text-chart-2 mx-auto" />
                     </div>
-                    <p className="text-white font-medium text-sm">{bullet.text}</p>
+                    <p className="text-white font-medium text-xs md:text-sm">{bullet.text}</p>
                   </div>
                 ))}
               </div>
