@@ -201,19 +201,19 @@ export default function SwitchFromUltramar() {
             
             {/* Comparison 1: Customer Service */}
             <Card className="overflow-hidden border-0 shadow-lg hover-elevate transition-all duration-300" data-testid="card-comparison-service">
-              <div className="bg-gray-100 px-5 py-3 border-b-2 border-gray-200">
-                <div className="flex items-center gap-2 text-gray-600">
-                  <div className="w-5 h-5 rounded-full bg-gray-400 flex items-center justify-center text-white text-xs font-bold">✗</div>
-                  <span className="text-sm font-medium">Call center, long waits, endless transfers</span>
+              <div className="bg-gray-200 px-6 py-4 border-b-2 border-gray-300">
+                <div className="flex items-center gap-2 text-gray-700">
+                  <div className="w-6 h-6 rounded-full bg-gray-500 flex items-center justify-center text-white text-sm font-bold">✗</div>
+                  <span className="text-base font-semibold">Call center, long waits, endless transfers</span>
                 </div>
               </div>
-              <div className="bg-gradient-to-br from-orange-500 to-orange-600 px-6 py-6 text-white">
+              <div className="bg-gradient-to-br from-orange-500 to-orange-600 px-6 py-4 text-white">
                 <div className="flex items-start gap-3">
                   <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-orange-600 text-lg font-bold flex-shrink-0 mt-0.5">✓</div>
                   <div>
-                    <h3 className="text-lg font-bold mb-2">Direct Line to Local Team</h3>
-                    <p className="text-white/95 text-sm leading-relaxed">
-                      Call (902) 539-4242 and speak to our Cape Breton team immediately. No phone trees, no hold music — just personal relationships and immediate attention.
+                    <h3 className="text-lg font-bold mb-1.5">Direct Line to Local Team</h3>
+                    <p className="text-white/95 text-sm">
+                      Call (902) 539-4242 and speak to our Cape Breton team immediately. No phone trees, no hold music.
                     </p>
                   </div>
                 </div>
@@ -222,19 +222,19 @@ export default function SwitchFromUltramar() {
 
             {/* Comparison 2: Emergency Response */}
             <Card className="overflow-hidden border-0 shadow-lg hover-elevate transition-all duration-300" data-testid="card-comparison-emergency">
-              <div className="bg-gray-100 px-5 py-3 border-b-2 border-gray-200">
-                <div className="flex items-center gap-2 text-gray-600">
-                  <div className="w-5 h-5 rounded-full bg-gray-400 flex items-center justify-center text-white text-xs font-bold">✗</div>
-                  <span className="text-sm font-medium">Regional dispatch, potential delays</span>
+              <div className="bg-gray-200 px-6 py-4 border-b-2 border-gray-300">
+                <div className="flex items-center gap-2 text-gray-700">
+                  <div className="w-6 h-6 rounded-full bg-gray-500 flex items-center justify-center text-white text-sm font-bold">✗</div>
+                  <span className="text-base font-semibold">Regional dispatch, potential delays</span>
                 </div>
               </div>
-              <div className="bg-gradient-to-br from-orange-500 to-orange-600 px-6 py-6 text-white">
+              <div className="bg-gradient-to-br from-orange-500 to-orange-600 px-6 py-4 text-white">
                 <div className="flex items-start gap-3">
                   <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-orange-600 text-lg font-bold flex-shrink-0 mt-0.5">✓</div>
                   <div>
-                    <h3 className="text-lg font-bold mb-2">Local 24/7 Emergency Service</h3>
-                    <p className="text-white/95 text-sm leading-relaxed">
-                      Our Cape Breton team responds directly to your emergency. No routing through regional offices. Same-day delivery when possible because we're right here.
+                    <h3 className="text-lg font-bold mb-1.5">Local 24/7 Emergency Service</h3>
+                    <p className="text-white/95 text-sm">
+                      Our Cape Breton team responds directly. Same-day delivery when possible because we're right here.
                     </p>
                   </div>
                 </div>
@@ -243,19 +243,19 @@ export default function SwitchFromUltramar() {
 
             {/* Comparison 3: Delivery Flexibility */}
             <Card className="overflow-hidden border-0 shadow-lg hover-elevate transition-all duration-300" data-testid="card-comparison-flexibility">
-              <div className="bg-gray-100 px-5 py-3 border-b-2 border-gray-200">
-                <div className="flex items-center gap-2 text-gray-600">
-                  <div className="w-5 h-5 rounded-full bg-gray-400 flex items-center justify-center text-white text-xs font-bold">✗</div>
-                  <span className="text-sm font-medium">Standardized routes, limited flexibility</span>
+              <div className="bg-gray-200 px-6 py-4 border-b-2 border-gray-300">
+                <div className="flex items-center gap-2 text-gray-700">
+                  <div className="w-6 h-6 rounded-full bg-gray-500 flex items-center justify-center text-white text-sm font-bold">✗</div>
+                  <span className="text-base font-semibold">Standardized routes, limited flexibility</span>
                 </div>
               </div>
-              <div className="bg-gradient-to-br from-orange-500 to-orange-600 px-6 py-6 text-white">
+              <div className="bg-gradient-to-br from-orange-500 to-orange-600 px-6 py-4 text-white">
                 <div className="flex items-start gap-3">
                   <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-orange-600 text-lg font-bold flex-shrink-0 mt-0.5">✓</div>
                   <div>
-                    <h3 className="text-lg font-bold mb-2">Flexible Scheduling</h3>
-                    <p className="text-white/95 text-sm leading-relaxed">
-                      We accommodate your needs and know your property. Need a specific delivery time? Have special access requirements? We work with you, not against you.
+                    <h3 className="text-lg font-bold mb-1.5">Flexible Scheduling</h3>
+                    <p className="text-white/95 text-sm">
+                      We accommodate your needs and know your property. We work with you, not against you.
                     </p>
                   </div>
                 </div>
@@ -264,19 +264,19 @@ export default function SwitchFromUltramar() {
 
             {/* Comparison 4: Local Knowledge */}
             <Card className="overflow-hidden border-0 shadow-lg hover-elevate transition-all duration-300" data-testid="card-comparison-knowledge">
-              <div className="bg-gray-100 px-5 py-3 border-b-2 border-gray-200">
-                <div className="flex items-center gap-2 text-gray-600">
-                  <div className="w-5 h-5 rounded-full bg-gray-400 flex items-center justify-center text-white text-xs font-bold">✗</div>
-                  <span className="text-sm font-medium">Regional operations, limited local expertise</span>
+              <div className="bg-gray-200 px-6 py-4 border-b-2 border-gray-300">
+                <div className="flex items-center gap-2 text-gray-700">
+                  <div className="w-6 h-6 rounded-full bg-gray-500 flex items-center justify-center text-white text-sm font-bold">✗</div>
+                  <span className="text-base font-semibold">Regional operations, limited local expertise</span>
                 </div>
               </div>
-              <div className="bg-gradient-to-br from-orange-500 to-orange-600 px-6 py-6 text-white">
+              <div className="bg-gradient-to-br from-orange-500 to-orange-600 px-6 py-4 text-white">
                 <div className="flex items-start gap-3">
                   <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-orange-600 text-lg font-bold flex-shrink-0 mt-0.5">✓</div>
                   <div>
-                    <h3 className="text-lg font-bold mb-2">50+ Years Cape Breton Experience</h3>
-                    <p className="text-white/95 text-sm leading-relaxed">
-                      We know every street, every weather pattern, every delivery challenge in Cape Breton. Born and raised here — true local expertise you can trust.
+                    <h3 className="text-lg font-bold mb-1.5">50+ Years Cape Breton Experience</h3>
+                    <p className="text-white/95 text-sm">
+                      We know every street, weather pattern, and delivery challenge. Born and raised here — true local expertise.
                     </p>
                   </div>
                 </div>
@@ -285,19 +285,19 @@ export default function SwitchFromUltramar() {
 
             {/* Comparison 5: Pricing */}
             <Card className="overflow-hidden border-0 shadow-lg hover-elevate transition-all duration-300" data-testid="card-comparison-pricing">
-              <div className="bg-gray-100 px-5 py-3 border-b-2 border-gray-200">
-                <div className="flex items-center gap-2 text-gray-600">
-                  <div className="w-5 h-5 rounded-full bg-gray-400 flex items-center justify-center text-white text-xs font-bold">✗</div>
-                  <span className="text-sm font-medium">Corporate pricing, potential hidden fees</span>
+              <div className="bg-gray-200 px-6 py-4 border-b-2 border-gray-300">
+                <div className="flex items-center gap-2 text-gray-700">
+                  <div className="w-6 h-6 rounded-full bg-gray-500 flex items-center justify-center text-white text-sm font-bold">✗</div>
+                  <span className="text-base font-semibold">Corporate pricing, potential hidden fees</span>
                 </div>
               </div>
-              <div className="bg-gradient-to-br from-orange-500 to-orange-600 px-6 py-6 text-white">
+              <div className="bg-gradient-to-br from-orange-500 to-orange-600 px-6 py-4 text-white">
                 <div className="flex items-start gap-3">
                   <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-orange-600 text-lg font-bold flex-shrink-0 mt-0.5">✓</div>
                   <div>
-                    <h3 className="text-lg font-bold mb-2">Transparent, Competitive Pricing</h3>
-                    <p className="text-white/95 text-sm leading-relaxed">
-                      No corporate overhead or hidden fees. Family business efficiency means better prices for Cape Breton families. Clear, honest pricing every time.
+                    <h3 className="text-lg font-bold mb-1.5">Transparent, Competitive Pricing</h3>
+                    <p className="text-white/95 text-sm">
+                      No corporate overhead or hidden fees. Family business efficiency means better prices. Clear, honest pricing every time.
                     </p>
                   </div>
                 </div>
@@ -306,19 +306,19 @@ export default function SwitchFromUltramar() {
 
             {/* Comparison 6: Personal Relationships */}
             <Card className="overflow-hidden border-0 shadow-lg hover-elevate transition-all duration-300" data-testid="card-comparison-personal">
-              <div className="bg-gray-100 px-5 py-3 border-b-2 border-gray-200">
-                <div className="flex items-center gap-2 text-gray-600">
-                  <div className="w-5 h-5 rounded-full bg-gray-400 flex items-center justify-center text-white text-xs font-bold">✗</div>
-                  <span className="text-sm font-medium">You're just an account number</span>
+              <div className="bg-gray-200 px-6 py-4 border-b-2 border-gray-300">
+                <div className="flex items-center gap-2 text-gray-700">
+                  <div className="w-6 h-6 rounded-full bg-gray-500 flex items-center justify-center text-white text-sm font-bold">✗</div>
+                  <span className="text-base font-semibold">You're just an account number</span>
                 </div>
               </div>
-              <div className="bg-gradient-to-br from-orange-500 to-orange-600 px-6 py-6 text-white">
+              <div className="bg-gradient-to-br from-orange-500 to-orange-600 px-6 py-4 text-white">
                 <div className="flex items-start gap-3">
                   <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-orange-600 text-lg font-bold flex-shrink-0 mt-0.5">✓</div>
                   <div>
-                    <h3 className="text-lg font-bold mb-2">We Know You by Name</h3>
-                    <p className="text-white/95 text-sm leading-relaxed">
-                      Personal relationships matter. We remember your heating needs, your property details, and your family. You're a valued neighbor, not account #47291853.
+                    <h3 className="text-lg font-bold mb-1.5">We Know You by Name</h3>
+                    <p className="text-white/95 text-sm">
+                      Personal relationships matter. We remember your heating needs and property. You're a valued neighbor, not account #47291853.
                     </p>
                   </div>
                 </div>
