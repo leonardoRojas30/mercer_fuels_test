@@ -76,7 +76,7 @@ export default function HeroSection({
       
       <div className={`container mx-auto px-4 ${breakpointClasses[gridBreakpoint].container} relative z-10`}>
         <div className={`grid ${breakpointClasses[gridBreakpoint].grid} gap-12 items-center ${textAlignmentClasses[textAlignment]}`}>
-          <div className={`space-y-6 ${contentAlignmentClasses[textAlignment]} ${textAlignment === 'center' ? 'pt-12' : ''}`}>
+          <div className={`space-y-6 ${contentAlignmentClasses[textAlignment]} ${textAlignment === 'center' ? 'pt-4 md:pt-12' : ''}`}>
             {tagline && (
               <p className="text-chart-2 font-semibold text-lg tracking-wide uppercase">
                 {tagline}
