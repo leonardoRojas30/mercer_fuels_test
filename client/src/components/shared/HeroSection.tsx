@@ -106,7 +106,7 @@ export default function HeroSection({
           </div>
           
           {children && (
-            <div className={`flex justify-center mt-4 md:mt-8 ${breakpointClasses[gridBreakpoint].cta}`}>
+            <div className={`flex justify-center mt-2 md:mt-8 ${breakpointClasses[gridBreakpoint].cta}`}>
               {children}
             </div>
           )}
