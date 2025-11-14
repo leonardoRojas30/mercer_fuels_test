@@ -77,7 +77,7 @@ export default function HeroSection({
           </div>
           
           {children && (
-            <div className="flex justify-center lg:justify-end">
+            <div className="flex justify-center lg:justify-end mt-8 lg:mt-0">
               {children}
             </div>
           )}

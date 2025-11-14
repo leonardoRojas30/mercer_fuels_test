@@ -44,7 +44,9 @@ export default function CTAGroup({
   const renderCTA = (cta: CTAProps, isPrimary = false) => {
     const buttonClasses = isPrimary ? 
       "bg-chart-2 text-white font-bold px-8 py-4 text-lg shadow-lg transition-all" :
-      "font-semibold transition-all";
+      cta.variant === "outline" ? 
+        "bg-white text-gray-900 border-2 border-white hover:bg-gray-100 font-semibold px-8 py-4 text-lg shadow-lg transition-all" :
+        "font-semibold transition-all";
 
     if (cta.phone) {
       return (
