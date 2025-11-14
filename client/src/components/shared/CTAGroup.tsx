@@ -61,6 +61,12 @@ export default function CTAGroup({
     }
   };
 
+  const buttonSizeMap = {
+    sm: "sm" as const,
+    md: "default" as const,
+    lg: "lg" as const
+  };
+
   const renderCTA = (cta: CTAProps, isPrimary = false) => {
     const scaleClasses = buttonScaleClasses[buttonScale];
     const buttonClasses = isPrimary ? 
@@ -68,12 +74,14 @@ export default function CTAGroup({
       cta.variant === "outline" ? 
         scaleClasses.outline :
         scaleClasses.default;
+    
+    const buttonSize = cta.size || buttonSizeMap[buttonScale];
 
     if (cta.phone) {
       return (
         <Button asChild
           variant={cta.variant || (isPrimary ? "default" : "outline")}
-          size={cta.size || "lg"}
+          size={buttonSize}
           className={buttonClasses}
           data-testid={cta.testId}
         >
@@ -89,7 +97,7 @@ export default function CTAGroup({
       return (
         <Button asChild
           variant={cta.variant || (isPrimary ? "default" : "outline")}
-          size={cta.size || "lg"}
+          size={buttonSize}
           className={buttonClasses}
           data-testid={cta.testId}
         >
@@ -103,7 +111,7 @@ export default function CTAGroup({
     return (
       <Button
         variant={cta.variant || (isPrimary ? "default" : "outline")}
-        size={cta.size || "lg"}
+        size={buttonSize}
         className={buttonClasses}
         onClick={cta.onClick}
         data-testid={cta.testId}
