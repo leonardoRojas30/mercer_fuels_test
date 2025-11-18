@@ -150,7 +150,7 @@ export default function NewCustomerSpecial() {
                   <Gift className="w-5 h-5 mr-2" />
                   Claim My New Customer Offer
                 </Button>
-                <Button size="lg" variant="outline" className="border-white text-white px-8 py-3" asChild data-testid="button-call-now">
+                <Button size="lg" variant="outline" className="bg-white/10 backdrop-blur-sm border-white/30 text-white font-bold px-8 py-3" asChild data-testid="button-call-now">
                   <a href="tel:902-539-4242">
                     <Phone className="w-5 h-5 mr-2" />
                     Call: (902) 539-4242
