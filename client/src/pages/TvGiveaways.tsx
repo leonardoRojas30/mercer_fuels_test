@@ -270,13 +270,10 @@ export default function TvGiveaways() {
               >
                 <Card className="p-8 hover-elevate h-full transition-all">
                   <div className="flex flex-col items-center gap-4">
-                    <div className="p-4 rounded-full bg-gradient-to-br from-[#833AB4] via-[#FD1D1D] to-[#F77737] opacity-10">
-                      <SiInstagram className="w-12 h-12" />
-                    </div>
-                    <div className="p-4 rounded-full bg-transparent -mt-20 relative z-10">
+                    <div className="p-4 rounded-full bg-[#E1306C]/10">
                       <SiInstagram className="w-12 h-12 text-[#E1306C]" />
                     </div>
-                    <h3 className="text-2xl font-bold -mt-4">Instagram</h3>
+                    <h3 className="text-2xl font-bold">Instagram</h3>
                     <p className="text-muted-foreground">
                       Follow us for behind-the-scenes content, winner announcements, and Cape Breton community highlights
                     </p>
