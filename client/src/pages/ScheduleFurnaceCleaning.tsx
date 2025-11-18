@@ -371,16 +371,15 @@ export default function ScheduleFurnaceCleaning() {
                   Get your annual furnace cleaning at no extra cost when you're covered by our furnace insurance plan. Plus, you'll have peace of mind with coverage on major components.
                 </p>
                 
-                <div className="pt-4">
+                <div className="pt-4 flex justify-center">
                   <Button 
                     size="lg"
                     asChild
                     className="bg-chart-2 hover:bg-chart-2/90 text-white"
                     data-testid="button-learn-insurance"
                   >
-                    <Link href="/insurance">
+                    <Link href="/insurance" className="flex justify-center">
                       Learn About Furnace Insurance
-                      <CheckCircle className="ml-2 h-5 w-5" />
                     </Link>
                   </Button>
                 </div>
