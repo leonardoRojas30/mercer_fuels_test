@@ -139,7 +139,7 @@ export default function NewHome() {
                   Congratulations on Your <span className="text-chart-2">New Home!</span>
                 </h1>
                 
-                <div className="bg-white/10 backdrop-blur-sm border-2 border-chart-2/50 rounded-2xl p-8">
+                <div className="bg-white/10 backdrop-blur-sm border-2 border-chart-2/50 rounded-2xl p-8 text-center">
                   <p className="text-3xl md:text-4xl font-bold text-chart-2 mb-2">
                     Get $100 in Free Oil
                   </p>
